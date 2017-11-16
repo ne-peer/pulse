@@ -2,6 +2,10 @@
 
 Portal site of Pulse.
 
+## Docs
+- [Nuxt.js](https://ja.nuxtjs.org/guide)
+- [Spectre.css](https://picturepan2.github.io/spectre/components.html)
+
 ## Build Setup
 
 ``` bash

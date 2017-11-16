@@ -13,6 +13,11 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  css: [
+    'spectre.css/dist/spectre.min.css',
+    'spectre.css/dist/spectre-exp.min.css',
+    'spectre.css/dist/spectre-icons.min.css'
+  ],
   /*
   ** Customize the progress bar color
   */

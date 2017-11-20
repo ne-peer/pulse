@@ -2,6 +2,9 @@
   <div class="outer">
     <div class="content">
       <navbar/>
+      <div class="bc">
+        <breadcrumbs/>
+      </div>
       <nuxt/>
     </div>
   </div>
@@ -9,10 +12,11 @@
 
 <script>
 import Navbar from '~/components/Navbar.vue'
+import Breadcrumbs from '~/components/Breadcrumbs.vue'
 
 export default {
   components: {
-    Navbar
+    Navbar, Breadcrumbs
   }
 }
 </script>
@@ -25,5 +29,9 @@ export default {
 .content {
   max-width: 980px;
   margin: 0 auto;
+}
+
+.bc {
+  margin-bottom: 40px;
 }
 </style>

@@ -16,8 +16,6 @@
   padding-bottom: 15px;
   padding-left: 18px;
   padding-right: 18px;
-
-  margin-bottom: 20px;
 }
 
 .navbar-brand {

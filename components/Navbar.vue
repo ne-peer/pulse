@@ -2,7 +2,7 @@
   <header class="navbar">
     <section class="navbar-section">
       <a href="#" class="navbar-brand">Pulse</a>
-      <a href="#" class="btn btn-link" lang="ja">概要</a>
+      <a href="#" class="btn btn-link" lang="ja">自己紹介</a>
     </section>
     <section class="navbar-section">
       <a href="https://ne-peer.com" class="btn btn-link">blog</a>
@@ -21,6 +21,6 @@
 }
 
 .navbar-brand {
-  margin-right: 40px;
+  margin-right: 60px;
 }
 </style>

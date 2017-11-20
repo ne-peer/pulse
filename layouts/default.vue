@@ -1,7 +1,9 @@
 <template>
   <div class="outer">
-    <navbar/>
-    <nuxt/>
+    <div class="content">
+      <navbar/>
+      <nuxt/>
+    </div>
   </div>
 </template>
 
@@ -18,7 +20,10 @@ export default {
 <style>
 .outer {
   box-sizing: border-box;
-  margin: 0 auto;
+}
+
+.content {
   max-width: 980px;
+  margin: 0 auto;
 }
 </style>

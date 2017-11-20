@@ -12,16 +12,21 @@
           Portal site of Pulse.
         </h2>
       </div>
+      <div class="divider text-center" data-content="contents"></div>
+      <div class="contents">
+        <contents-link/>
+      </div>
     </div>
   </section>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
+import ContentsLink from '~/components/ContentsLink.vue'
 
 export default {
   components: {
-    Logo
+    Logo, ContentsLink
   }
 }
 </script>
@@ -49,5 +54,9 @@ export default {
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
+}
+
+.contents {
+  margin-top: 30px;
 }
 </style>

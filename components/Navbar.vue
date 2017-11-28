@@ -22,8 +22,8 @@
   padding-right: 18px;
 }
 
-.btn-group-block .btn {
-  width: 120px;
+.btn-group-block button {
+  width: 140px;
   font-size: 14px;
 }
 </style>

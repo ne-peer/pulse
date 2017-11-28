@@ -1,12 +1,16 @@
 <template>
   <header class="navbar">
     <section class="navbar-section">
-      <a href="/" class="navbar-brand">Pulse</a>
-      <a href="/introduction" class="btn btn-link" lang="ja">自己紹介</a>
+     <nuxt-link tag="a" to="/" class="navbar-brand" lang="en">Pulse</nuxt-link>
     </section>
-    <section class="navbar-section">
-      <a href="https://ne-peer.com" class="btn btn-link">blog</a>
+    <section class="navbar-section navlink">
+      <div class="btn-group btn-group-block">
+        <nuxt-link tag="button" to="/introduction" class="btn" lang="ja">自己紹介</nuxt-link>
+        <nuxt-link tag="button" to="/activity" class="btn" lang="ja">活動</nuxt-link>
+      </div>
     </section>
+    <section class="navbar-section"></section>
+    <section class="navbar-section"></section>
   </header>
 </template>
 
@@ -20,5 +24,10 @@
 
 .navbar-brand {
   margin-right: 60px;
+}
+
+.btn-group-block .btn {
+  width: 120px;
+  font-size: 14px;
 }
 </style>

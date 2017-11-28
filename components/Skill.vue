@@ -4,7 +4,7 @@
       <div class="panel-header">
         <div class="panel-title">実務経験</div>
       </div>
-      <div class="panel-body">
+      <div class="panel-body description-indent">
         <div class="tile">
           <div class="tile-content">
             <p class="tile-title" lang="ja"><h4>Eコマースシステムの開発</h4></p>
@@ -30,41 +30,56 @@
         <div class="panel-title" lang="ja">技能</div>
       </div>
       <div class="panel-body">
-        <div class="tile">
-          <!-- <div class="tile-icon">
-            <div class="example-tile-icon">
-              <img src="~static/skill/php-logo.png" height="50" width="50" class="img-responsive" alt="aaa">
+        <div class="container">
+          <div class="columns">
+            <div class="column col-6 col-sm-12">
+              <div class="tile">
+                <!-- <div class="tile-icon">
+                  <div class="example-tile-icon">
+                    <img src="~static/skill/php-logo.png" height="50" width="50" class="img-responsive" alt="aaa">
+                  </div>
+                </div> -->
+                <div class="tile-content">
+                  <p class="tile-title"><h4>PHP</h4></p>
+                  <p class="tile-subtitle text-gray">
+                      Lorem ipsum dolor sit.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div> -->
-          <div class="tile-content">
-            <p class="tile-title"><h4>PHP</h4></p>
-            <p class="tile-subtitle text-gray">
-                Lorem ipsum dolor sit.
-            </p>
-          </div>
-        </div>
-        <div class="tile">
-          <div class="tile-content">
-            <p class="tile-title"><h4>JavaScript</h4></p>
-            <p class="tile-subtitle text-gray">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, veritatis?
-            </p>
-          </div>
-        </div>
-        <div class="tile">
-          <div class="tile-content">
-            <p class="tile-title"><h4>HTML & CSS</h4></p>
-            <p class="tile-subtitle text-gray">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo minus debitis facere reprehenderit sit! Natus!
-            </p>
-          </div>
-        </div>
-        <div class="tile">
-          <div class="tile-content">
-            <p class="tile-title"><h4>Linux</h4></p>
-            <p class="tile-subtitle text-gray">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            </p>
+
+            <div class="column col-6 col-sm-12">
+              <div class="tile">
+                <div class="tile-content">
+                  <p class="tile-title"><h4>JavaScript</h4></p>
+                  <p class="tile-subtitle text-gray">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, veritatis?
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="column col-6 col-sm-12">
+              <div class="tile">
+                <div class="tile-content">
+                  <p class="tile-title"><h4>HTML & CSS</h4></p>
+                  <p class="tile-subtitle text-gray">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo minus debitis facere reprehenderit sit! Natus!
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="column col-6 col-sm-12">
+              <div class="tile">
+                <div class="tile-content">
+                  <p class="tile-title"><h4>Linux</h4></p>
+                  <p class="tile-subtitle text-gray">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -79,7 +94,7 @@ div.panel {
     background-color: #f8f9fa;
 }
 
-div.panel-body {
+.description-indent {
     margin-left: 20px;
 }
 

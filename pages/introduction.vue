@@ -1,10 +1,10 @@
 <template>
   <section>
-    <div class="divider text-center aaa" data-content="経歴"></div>
+    <div class="divider text-center" data-content="経歴" lang="ja"></div>
     <div class="section">
       <Career/>
     </div>
-    <div class="divider text-center aaa" data-content="技術"></div>
+    <div class="divider text-center" data-content="技能" lang="ja"></div>
     <div class="section">
       <Skill/>
     </div>

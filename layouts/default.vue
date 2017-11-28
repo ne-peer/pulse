@@ -7,18 +7,18 @@
       </div>
       <nuxt/>
     </div>
-    <Footer/>
+    <PulseFooter/>
   </div>
 </template>
 
 <script>
 import Navbar from '~/components/Navbar.vue'
 import Breadcrumbs from '~/components/Breadcrumbs.vue'
-import Footer from '~/components/Footer.vue'
+import PulseFooter from '~/components/PulseFooter.vue'
 
 export default {
   components: {
-    Navbar, Breadcrumbs, Footer
+    Navbar, Breadcrumbs, PulseFooter
   }
 }
 </script>

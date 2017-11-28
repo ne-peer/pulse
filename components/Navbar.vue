@@ -1,7 +1,7 @@
 <template>
   <header class="navbar">
     <section class="navbar-section">
-     <nuxt-link tag="a" to="/" class="navbar-brand" lang="en">Pulse</nuxt-link>
+     <nuxt-link tag="a" to="/" class="navbar-brand mr-2" lang="en">Pulse</nuxt-link>
     </section>
     <section class="navbar-section navlink">
       <div class="btn-group btn-group-block">
@@ -20,10 +20,6 @@
   padding-bottom: 15px;
   padding-left: 18px;
   padding-right: 18px;
-}
-
-.navbar-brand {
-  margin-right: 60px;
 }
 
 .btn-group-block .btn {

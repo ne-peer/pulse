@@ -1,10 +1,12 @@
 <template>
   <div class="outer">
     <div class="content">
-      <Navbar/>
-      <div class="bc">
-        <Breadcrumbs/>
+      <div class="nav">
+        <Navbar/>
       </div>
+      <!-- <div class="bc">
+        <Breadcrumbs/>
+      </div> -->
       <nuxt/>
     </div>
     <PulseFooter/>
@@ -34,6 +36,10 @@ export default {
 }
 
 .bc {
+  margin-bottom: 40px;
+}
+
+.nav {
   margin-bottom: 40px;
 }
 </style>

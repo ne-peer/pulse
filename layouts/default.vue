@@ -7,7 +7,9 @@
       <!-- <div class="bc">
         <Breadcrumbs/>
       </div> -->
-      <nuxt/>
+      <div class="main-contents">
+        <nuxt/>
+      </div>
     </div>
     <PulseFooter/>
   </div>
@@ -41,5 +43,9 @@ export default {
 
 .nav {
   margin-bottom: 40px;
+}
+
+.main-contents {
+  min-height: 750px;
 }
 </style>

@@ -1,24 +1,35 @@
 <template>
   <footer>
-      <p>P u l s e</p>
+    <div class="author">
+      <div class="name">P u l s e</div>
+      <div class="mail">contact to example0000@gmail.com</div>
+    </div>
   </footer>
 </template>
 
 <style>
 footer {
   margin-top: 40px;
-  height: 86px;
   background-color: #454d5d;
+  height: 146px;
 }
 
-footer p {
-  padding-top: 26px;
+footer .author {
+  padding-top: 44px;
   text-align: center;
-  
-  display: block;
+}
+
+footer .name {
+  color: #ffffff;
   font-weight: 300;
   font-size: 22px;
-  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+footer .mail {
+  color: #ccc;
+  font-weight: 300;
+  font-size: 12px;
   letter-spacing: 1px;
 }
 </style>

@@ -12,21 +12,16 @@
           Portal site of Pulse.
         </h2>
       </div>
-      <div class="divider text-center" data-content="contents"></div>
-      <div class="contents">
-        <contents-link/>
-      </div>
     </div>
   </section>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
-import ContentsLink from '~/components/ContentsLink.vue'
 
 export default {
   components: {
-    Logo, ContentsLink
+    Logo
   }
 }
 </script>

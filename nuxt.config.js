@@ -17,7 +17,8 @@ module.exports = {
     { src: '~assets/css/pulse.scss', lang: 'scss' },
     // 'node_modules/spectre.css/dist/spectre.min.css',
     'node_modules/spectre.css/dist/spectre-exp.min.css',
-    'node_modules/spectre.css/dist/spectre-icons.min.css'
+    'node_modules/spectre.css/dist/spectre-icons.min.css',
+    'assets/main.css'
   ],
   /*
   ** Customize the progress bar color

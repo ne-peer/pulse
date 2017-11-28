@@ -4,13 +4,9 @@
       <div class="logo">
         <logo/>
       </div>
-      <div>
-        <h1 class="title">
-          Pulse
-        </h1>
-        <h2 class="subtitle">
-          Portal site of Pulse.
-        </h2>
+      <div class="title-section">
+        <p class="title">Pulse</p>
+        <p class="subtitle">Portal site of Pulse.</p>
       </div>
     </div>
   </section>
@@ -36,20 +32,22 @@ export default {
 .title {
   display: block;
   font-weight: 300;
-  font-size: 42px;
+  font-size: 64px;
   color: #35495e;
   letter-spacing: 1px;
 }
 
 .subtitle {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 24px;
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
 }
 
-.contents {
-  margin-top: 30px;
+.title-section {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 700px;
 }
 </style>

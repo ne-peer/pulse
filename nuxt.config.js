@@ -3,14 +3,23 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Pulse Portal',
+    title: 'Pulse Freelance',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Portal site of Pulse.' }
+      { name: 'site_name', content: 'Pulse Freelance' },
+      { name: 'keywords', content: 'Pulse,パルス,フリーランス' },
+      { name: 'description', content: 'フリーランス Pulse のポートフォリオサイトです。' },
+      { name: 'og:type', content: 'website' },
+      { name: 'og:site_name', content: 'Pulse Freelance' },
+      { name: 'og:title', content: 'Pulse Freelance' },
+      { name: 'og:description', content: 'フリーランス Pulse のポートフォリオサイトです。' }
+      // { name: 'og:url', content: 'https://example.com' },
+      // { name: 'og:image', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', hrefrang: 'ja', href: 'https://example.com' }
     ]
   },
   css: [
@@ -31,7 +40,7 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
-    extend (config, ctx) {
+    extend(config, ctx) {
       if (ctx.dev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',

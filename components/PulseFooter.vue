@@ -2,7 +2,9 @@
   <footer>
     <div class="author">
       <div class="name">P u l s e</div>
-      <div class="mail">contact to example0000@gmail.com</div>
+      <div class="mail">
+        <i class="fa fa-envelope-o" aria-hidden="true"></i> example0000@gmail.com
+      </div>
     </div>
   </footer>
 </template>

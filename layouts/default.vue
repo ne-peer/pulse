@@ -1,5 +1,6 @@
 <template>
   <div class="outer">
+    <script src="https://use.fontawesome.com/f8cbf6b46f.js"></script>
     <div class="content">
       <div class="nav">
         <Navbar/>

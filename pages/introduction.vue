@@ -8,7 +8,7 @@
     <div class="section">
       <Career/>
     </div>
-    <div class="divider text-center" data-content="技能"></div>
+    <div class="divider text-center" data-content="スキル"></div>
     <div class="section">
       <Skill/>
     </div>

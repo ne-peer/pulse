@@ -7,6 +7,7 @@
       <div class="btn-group btn-group-block">
         <nuxt-link tag="button" to="/introduction" class="btn" lang="ja">自己紹介</nuxt-link>
         <nuxt-link tag="button" to="/activity" class="btn" lang="ja">活動</nuxt-link>
+        <nuxt-link tag="button" to="/contact" class="btn" lang="ja">連絡先</nuxt-link>
       </div>
     </section>
     <section class="navbar-section"></section>

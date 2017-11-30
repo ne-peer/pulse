@@ -1,18 +1,18 @@
 <template>
   <div>
-    <div class="divider text-center" data-content="コンテンツ" lang="ja"></div>
+    <div class="divider text-center" data-content="ポートフォリオ" lang="ja"></div>
     <div class="section">
-        <ContentsLink/>
+        <Portfolio/>
     </div>
   </div>
 </template>
 
 <script>
-import ContentsLink from '~/components/ContentsLink.vue'
+import Portfolio from '~/components/Portfolio.vue'
 
 export default {
   components: {
-    ContentsLink
+    Portfolio
   }
 }
 </script>

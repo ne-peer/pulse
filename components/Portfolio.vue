@@ -1,64 +1,61 @@
 <template>
-  <div class="container">
-    <div class="columns col-sm-oneline">
-      <div class="col-sm-12 col-6">
-        <div class="parallax">
-          <div class="parallax-top-left"></div>
-          <div class="parallax-top-right"></div>
-          <div class="parallax-bottom-left"></div>
-          <div class="parallax-bottom-right"></div>
-          <div class="parallax-content">
-            <div class="parallax-front">
-              <h2>deredorm</h2>
+  <section>
+    <div class="container">
+      <div class="columns col-sm-oneline">
+        <div class="col-4 col-md-6 col-xs-12">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://placehold.jp/500x250.png" class="img-responsive">
             </div>
-            <div class="parallax-back">
-              <img src="https://placehold.jp/500x250.png" class="img-responsive rounded">
+            <div class="card-header">
+              <div class="card-title h5">Deredorm</div>
+              <div class="card-subtitle text-gray">Website</div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-3">
-        <div class="parallax">
-          <div class="parallax-top-left"></div>
-          <div class="parallax-top-right"></div>
-          <div class="parallax-bottom-left"></div>
-          <div class="parallax-bottom-right"></div>
-          <div class="parallax-content">
-            <div class="parallax-front">
-              <h2>qiita</h2>
+            <div class="card-body">
+              Lorem ipsum dolor sit amet consectetur.
             </div>
-            <div class="parallax-back">
-              <img src="https://placehold.jp/500x250.png" class="img-responsive rounded">
+            <div class="card-footer">
+              <button class="btn btn-primary">View</button>
+              <button class="btn btn-link">Github</button>
             </div>
           </div>
         </div>
-      </div>
-      
-      <div class="col-sm-6 col-3">
-        <div class="parallax">
-          <div class="parallax-top-left"></div>
-          <div class="parallax-top-right"></div>
-          <div class="parallax-bottom-left"></div>
-          <div class="parallax-bottom-right"></div>
-          <div class="parallax-content">
-            <div class="parallax-front">
-              <h2>github</h2>
+  
+        <div class="col-4 col-md-6 col-xs-12">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://placehold.jp/500x250.png" class="img-responsive">
             </div>
-            <div class="parallax-back">
-              <img src="https://placehold.jp/500x250.png" class="img-responsive rounded">
+            <div class="card-header">
+              <div class="card-title h5">Dia</div>
+              <div class="card-subtitle text-gray">Bot</div>
+            </div>
+            <div class="card-body">
+              Lorem ipsum dolor sit amet.
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary">View</button>
+              <button class="btn btn-link">Github</button>
             </div>
           </div>
         </div>
+        <!-- col-oneline -->
       </div>
-      <!-- col-oneline -->
+      <!-- container -->
     </div>
-    <!-- container -->
-  </div>
+  </section>
 </template>
 
 <style>
-.parallax {
-    margin:10px;
+.card {
+  margin: 5px;
+}
+
+.card-body {
+  min-height: 65px;
+}
+
+.card-footer button {
+  margin-right: 3px;
 }
 </style>

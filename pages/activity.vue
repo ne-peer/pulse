@@ -1,8 +1,8 @@
 <template>
   <section>
-    <div class="divider text-center" data-content="ポートフォリオ" lang="ja"></div>
+    <div class="divider text-center" data-content="個人的に作ったもの" lang="ja"></div>
     <div class="section">
-        <Portfolio/>
+        <PortfolioPrivate/>
     </div>
     <div class="divider text-center" data-content="ソーシャル" lang="ja"></div>
     <div class="section">
@@ -12,12 +12,12 @@
 </template>
 
 <script>
-import Portfolio from '~/components/Portfolio.vue'
+import PortfolioPrivate from '~/components/PortfolioPrivate.vue'
 import Social from '~/components/Social.vue'
 
 export default {
   components: {
-    Portfolio, Social
+    PortfolioPrivate, Social
   }
 }
 </script>

@@ -1,18 +1,23 @@
 <template>
-  <div>
+  <section>
     <div class="divider text-center" data-content="ポートフォリオ" lang="ja"></div>
     <div class="section">
         <Portfolio/>
     </div>
-  </div>
+    <div class="divider text-center" data-content="ソーシャル" lang="ja"></div>
+    <div class="section">
+        <Social/>
+    </div>
+  </section>
 </template>
 
 <script>
 import Portfolio from '~/components/Portfolio.vue'
+import Social from '~/components/Social.vue'
 
 export default {
   components: {
-    Portfolio
+    Portfolio, Social
   }
 }
 </script>

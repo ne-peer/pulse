@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="activity">
     <div class="divider text-center" data-content="個人的に作ったもの" lang="ja"></div>
     <div class="section">
         <PortfolioPrivate/>
@@ -23,8 +23,8 @@ export default {
 </script>
 
 <style>
-.section {
+.activity .section {
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 200px;
 }
 </style>

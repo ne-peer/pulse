@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="introduction">
     <div class="divider text-center" data-content="プロフィール"></div>
     <div class="section">
       <Profile/>
@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style>
-.section {
+.introduction .section {
   margin-top: 40px;
   margin-bottom: 110px;
 }

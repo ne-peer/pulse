@@ -3,36 +3,42 @@
     <div class="container">
       <div class="columns col-sm-oneline">
         <div class="col-6 col-md-12">
-          <div class="panel github">
-            <div class="panel-body">
-              <div class="sns">
-                <p class="title"><h3>Github</h3></p>
-                <p class="desc text-gray" lang="ja">個人的な開発リポジトリなど。</p>
+          <a href="https://github.com/ne-peer" target="_blank">
+            <div class="panel github">
+              <div class="panel-body">
+                <div class="sns">
+                  <p class="title"><h3>Github</h3></p>
+                  <p class="desc text-gray" lang="ja">個人的な開発リポジトリなど。</p>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
         
         <div class="col-6 col-md-12">
-          <div class="panel qiita">
-            <div class="panel-body">
-              <div class="sns">
-                <p class="title"><h3>Qiita</h3></p>
-                <p class="desc text-gray" lang="ja">Angular を中心に書いています。</p>
+          <a href="https://qiita.com/ne-peer" target="_blank">
+            <div class="panel qiita">
+              <div class="panel-body">
+                <div class="sns">
+                  <p class="title"><h3>Qiita</h3></p>
+                  <p class="desc text-gray" lang="ja">Angular を中心に書いています。</p>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
         
         <div class="col-6 col-md-12">
-          <div class="panel blog">
-            <div class="panel-body">
-              <div class="sns">
-                <p class="title"><h3>Blog</h3></p>
-                <p class="desc" lang="ja">プライベートな日記です。</p>
+          <a href="https://ne-peer.com" target="_blank">
+            <div class="panel blog">
+              <div class="panel-body">
+                <div class="sns">
+                  <p class="title"><h3>Blog</h3></p>
+                  <p class="desc" lang="ja">プライベートな日記です。</p>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       <!-- col-oneline -->
       </div>
@@ -42,6 +48,10 @@
 </template>
 
 <style>
+a {
+  text-decoration: none;
+}
+
 .panel {
   margin: 10px;
   min-height: 126px;

@@ -64,7 +64,7 @@ section.skill-section {
   padding: 20px;
 }
 
-div.panel {
+.skill-section .panel {
   margin-bottom: 30px;
   /* background-color: #727e96;
   color: #f8f9fa; */

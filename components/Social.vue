@@ -7,7 +7,7 @@
             <div class="panel github" id="github">
               <div class="panel-body">
                 <div class="sns">
-                  <h3 class="title">Github</h3>
+                  <h3 class="title"><i class="fa fa-github" aria-hidden="true"></i>Github</h3>
                   <p class="desc" lang="ja">個人的な開発リポジトリなど。</p>
                 </div>
               </div>
@@ -20,7 +20,7 @@
             <div class="panel qiita">
               <div class="panel-body">
                 <div class="sns">
-                  <h3 class="title">Qiita</h3>
+                  <h3 class="title"><i class="fa fa-bookmark" aria-hidden="true"></i>Qiita</h3>
                   <p class="desc" lang="ja">Angular を中心に書いています。</p>
                 </div>
               </div>
@@ -33,8 +33,8 @@
             <div class="panel blog">
               <div class="panel-body">
                 <div class="sns">
-                  <h3 class="title">Blog</h3>
-                  <p class="desc" lang="ja">プライベートな日記です。</p>
+                  <h3 class="title"><i class="fa fa-wordpress" aria-hidden="true"></i>Blog</h3>
+                  <p class="desc" lang="ja">中の人のプライベートな日記です。</p>
                 </div>
               </div>
             </div>
@@ -58,6 +58,10 @@
 .sns {
   padding-bottom: 3px;
   padding-left: 10px;
+}
+
+.panel .title i {
+  margin-right: 12px;
 }
 
 .panel .desc {

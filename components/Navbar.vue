@@ -46,6 +46,6 @@ header i {
 }
 
 header button span {
-  margin-left: 8px;
+  margin-left: 12px;
 }
 </style>

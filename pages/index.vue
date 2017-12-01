@@ -4,9 +4,13 @@
       <div class="logo">
         <logo/>
       </div>
-      <div class="title-section">
-        <p class="title">Pulse</p>
-        <p class="subtitle">Portal site of Pulse.</p>
+      <div class="main container">
+        <div class="columns">
+          <div class="column col-8 col-mx-auto">
+            <p class="title">Pulse</p>
+            <p class="subtitle">Portal site of Pulse.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -43,11 +47,5 @@ section.index .subtitle {
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
-}
-
-section.index .title-section {
-  margin: 0 auto;
-  margin-top: 40px;
-  width: 700px;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section class="index">
     <div>
       <div class="logo">
         <logo/>
@@ -23,13 +23,13 @@ export default {
 </script>
 
 <style>
-.logo {
+section.index .logo {
   margin-bottom: 25px;
   width: 200px;
   margin: 0 auto;
 }
 
-.title {
+section.index .title {
   display: block;
   font-weight: 300;
   font-size: 64px;
@@ -37,7 +37,7 @@ export default {
   letter-spacing: 1px;
 }
 
-.subtitle {
+section.index .subtitle {
   font-weight: 300;
   font-size: 24px;
   color: #526488;
@@ -45,7 +45,7 @@ export default {
   padding-bottom: 15px;
 }
 
-.title-section {
+section.index .title-section {
   margin: 0 auto;
   margin-top: 40px;
   width: 700px;

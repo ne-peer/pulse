@@ -48,23 +48,23 @@
 </template>
 
 <style>
-.panel {
+.social .panel {
   margin: 10px;
   min-height: 100px;
   padding-top: 18px;
   border-radius: 5px;
 }
 
-.sns {
+.social .sns {
   padding-bottom: 3px;
   padding-left: 10px;
 }
 
-.panel .title i {
+.social .panel .title i {
   margin-right: 12px;
 }
 
-.panel .desc {
+.social .panel .desc {
   padding-left: 10px;
   color: #727e96;
 }

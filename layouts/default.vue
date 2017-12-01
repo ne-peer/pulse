@@ -5,9 +5,6 @@
       <div class="nav">
         <Navbar/>
       </div>
-      <!-- <div class="bc">
-        <Breadcrumbs/>
-      </div> -->
       <div class="main-contents">
         <nuxt/>
       </div>
@@ -18,12 +15,11 @@
 
 <script>
 import Navbar from '~/components/Navbar.vue'
-import Breadcrumbs from '~/components/Breadcrumbs.vue'
 import PulseFooter from '~/components/PulseFooter.vue'
 
 export default {
   components: {
-    Navbar, Breadcrumbs, PulseFooter
+    Navbar, PulseFooter
   }
 }
 </script>

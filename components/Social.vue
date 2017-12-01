@@ -1,14 +1,14 @@
 <template>
-  <section>
+  <section class="social">
     <div class="container">
       <div class="columns col-sm-oneline">
         <div class="col-6 col-md-12">
           <a href="https://github.com/ne-peer" target="_blank">
-            <div class="panel github">
+            <div class="panel github" id="github">
               <div class="panel-body">
                 <div class="sns">
-                  <p class="title"><h3>Github</h3></p>
-                  <p class="desc text-gray" lang="ja">個人的な開発リポジトリなど。</p>
+                  <h3 class="title">Github</h3>
+                  <p class="desc" lang="ja">個人的な開発リポジトリなど。</p>
                 </div>
               </div>
             </div>
@@ -20,8 +20,8 @@
             <div class="panel qiita">
               <div class="panel-body">
                 <div class="sns">
-                  <p class="title"><h3>Qiita</h3></p>
-                  <p class="desc text-gray" lang="ja">Angular を中心に書いています。</p>
+                  <h3 class="title">Qiita</h3>
+                  <p class="desc" lang="ja">Angular を中心に書いています。</p>
                 </div>
               </div>
             </div>
@@ -33,7 +33,7 @@
             <div class="panel blog">
               <div class="panel-body">
                 <div class="sns">
-                  <p class="title"><h3>Blog</h3></p>
+                  <h3 class="title">Blog</h3>
                   <p class="desc" lang="ja">プライベートな日記です。</p>
                 </div>
               </div>
@@ -48,13 +48,10 @@
 </template>
 
 <style>
-a {
-  text-decoration: none;
-}
-
 .panel {
   margin: 10px;
-  min-height: 126px;
+  min-height: 100px;
+  padding-top: 18px;
   border-radius: 5px;
 }
 
@@ -69,12 +66,8 @@ a {
 }
 
 .github {
-  background-color: #454d5d;
-  color: #ffffff;
-}
-
-.github .desc {
-  color: #acb3c2;
+  color: #454d5d;
+  background-color: #f8f9fa;
 }
 
 .qiita {

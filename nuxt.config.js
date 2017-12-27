@@ -22,6 +22,11 @@ module.exports = {
       { rel: 'icon', hrefrang: 'ja', href: 'https://example.com' }
     ]
   },
+  env: {
+    storyblok: {
+      token: 'MY_STORYBLOK_TOKEN'
+    }
+  },
   css: [
     { src: '~assets/css/pulse.scss', lang: 'scss' },
     // 'node_modules/spectre.css/dist/spectre.min.css',
@@ -40,7 +45,7 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
-    extend(config, ctx) {
+    extend (config, ctx) {
       if (ctx.dev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',
@@ -50,5 +55,9 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  plugins: [
+    '~/plugins/component.js',
+    '~/plugins/storyblok_bridge.js'
+  ]
 }

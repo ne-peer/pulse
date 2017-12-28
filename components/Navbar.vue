@@ -5,24 +5,29 @@
     </div>
     <div class="navbar-section navlink">
       <div class="btn-group btn-group-block">
-        
         <div class="container grid-lg">
           <div class="columns">
             <nuxt-link tag="button" to="/introduction" class="btn">
               <i class="fa fa-user" aria-hidden="true"></i>
               <span class="hide-md">About</span>
             </nuxt-link>
+
+            <nuxt-link tag="button" to="/posts" class="btn">
+              <i class="fa fa-book" aria-hidden="true"></i>
+              <span class="hide-md">Blog</span>
+            </nuxt-link>
+
             <nuxt-link tag="button" to="/activity" class="btn">
               <i class="fa fa-diamond" aria-hidden="true"></i>
               <span class="hide-md">Portfolio</span>
             </nuxt-link>
+
             <nuxt-link tag="button" to="/contact" class="btn">
               <i class="fa fa-envelope" aria-hidden="true"></i>
               <span class="hide-md">Contact</span>
             </nuxt-link>
           </div>
         </div>
-
       </div>
     </div>
   </header>

@@ -13,7 +13,7 @@
             </nuxt-link>
 
             <nuxt-link tag="button" to="/posts" class="btn">
-              <i class="fa fa-book" aria-hidden="true"></i>
+              <i class="fa fa-bookmark" aria-hidden="true"></i>
               <span class="hide-md">Blog</span>
             </nuxt-link>
 
@@ -47,7 +47,8 @@ header.navbar .navbar-brand {
   letter-spacing: 4px;
 }
 
-header.navbar .btn:hover {
+header.navbar .btn:hover,
+header.navbar .btn:focus {
   color: #ffffff;
 }
 

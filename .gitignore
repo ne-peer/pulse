@@ -12,3 +12,6 @@ dist
 
 # Development work dir
 development_work
+
+# env
+.contentful.json

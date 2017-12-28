@@ -1,3 +1,5 @@
+const config = require('./.contentful.json')
+
 module.exports = {
   /*
   ** Headers of the page
@@ -29,6 +31,12 @@ module.exports = {
     'node_modules/spectre.css/dist/spectre-icons.min.css',
     'assets/main.css'
   ],
+  env: {
+    CTF_SPACE_ID: config.CTF_SPACE_ID,
+    CTF_CDA_ACCESS_TOKEN: config.CTF_CDA_ACCESS_TOKEN,
+    CTF_PERSON_ID: config.CTF_PERSON_ID,
+    CTF_BLOG_POST_TYPE_ID: config.CTF_BLOG_POST_TYPE_ID
+  },
   /*
   ** Customize the progress bar color
   */
@@ -40,15 +48,16 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
-    extend(config, ctx) {
+    extend (config, ctx) {
       if (ctx.dev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',
-          test: /\.(js|vue)$/,
+          test: /\.(js)$/,
           loader: 'eslint-loader',
           exclude: /(node_modules)/
         })
       }
     }
-  }
+  },
+  plugins: ['~plugins/contentful']
 }

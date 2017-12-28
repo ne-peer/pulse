@@ -14,8 +14,10 @@
   },
   "dependencies": {
     "contentful": "^5.0.5",
+    "contentful-management": "^4.1.2",
     "nuxt": "^1.0.0-rc11",
-    "spectre.css": "^0.4.5"
+    "spectre.css": "^0.4.5",
+    "vue-markdown": "^2.2.4"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
@@ -28,6 +30,7 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
     "node-sass": "^4.7.2",
+    "push-dir": "^0.4.1",
     "sass-loader": "^6.0.6"
   }
 }

@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="portfolio-private">
     <div class="container">
       <div class="columns col-sm-oneline">
         <div class="col-4 col-md-6 col-xs-12">
@@ -47,15 +47,15 @@
 </template>
 
 <style>
-.card {
+.portfolio-private .card {
   margin: 5px;
 }
 
-.card-body {
+.portfolio-private .card-body {
   min-height: 65px;
 }
 
-.card-footer button {
+.portfolio-private .card-footer button {
   margin-right: 3px;
 }
 </style>

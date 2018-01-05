@@ -19,9 +19,18 @@
       <vue-markdown class="content">{{ currentPost.fields.body }}</vue-markdown>
 
       <nav class="pagination is-centered" role="navigation" aria-label="pagination">
-        <nuxt-link v-if="prevPost" class="pagination-previous" :to="prevPost.fields.slug">&laquo; {{ prevPost.fields.title }}</nuxt-link>
-        <nuxt-link v-if="nextPost" class="pagination-next" :to="nextPost.fields.slug">{{ nextPost.fields.title }} &raquo;</nuxt-link>
+        <div class="container">
+          <div class="columns col-oneline">
+            <div class="column col-6">
+              <nuxt-link v-if="prevPost" class="pagination-previous" :to="prevPost.fields.slug">&laquo; {{ prevPost.fields.title }}</nuxt-link>
+            </div>
+            <div class="column col-6" style="text-align:right;">
+              <nuxt-link v-if="nextPost" class="pagination-next" :to="nextPost.fields.slug">{{ nextPost.fields.title }} &raquo;</nuxt-link>
+            </div>
+          </div>
+        </div>
       </nav>
+
     </article>
 
   </section>

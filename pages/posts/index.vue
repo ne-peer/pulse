@@ -4,7 +4,7 @@
 
       <div class="columns">
         <div class="col-4 col-md-6 col-sm-12" v-for="post in posts">
-          <nuxt-link tag="div" to="{ name: 'posts-slug', params: { slug: post.fields.slug }}" class="card">
+          <nuxt-link tag="div" :to="{ name: 'posts-slug', params: { slug: post.fields.slug }}" class="card">
             <div class="card-header">
               <div class="card-title h5">{{ post.fields.title }}</div>
               <div class="card-subtitle text-gray">{{ ( new Date(post.fields.publishDate)).toDateString() }}</div>

@@ -8,7 +8,7 @@
               <div class="panel-body">
                 <div class="sns">
                   <h3 class="title"><i class="fa fa-github" aria-hidden="true"></i>Github</h3>
-                  <p class="desc" lang="ja">個人的な開発リポジトリなど。</p>
+                  <p class="desc" lang="ja">個人的な開発リポジトリなど</p>
                 </div>
               </div>
             </div>
@@ -21,25 +21,25 @@
               <div class="panel-body">
                 <div class="sns">
                   <h3 class="title"><i class="fa fa-bookmark" aria-hidden="true"></i>Qiita</h3>
-                  <p class="desc" lang="ja">Angular を中心に書いています。</p>
+                  <p class="desc" lang="ja">Angular を中心に書いています</p>
                 </div>
               </div>
             </div>
           </a>
         </div>
         
-        <div class="col-6 col-md-12">
+        <!-- <div class="col-6 col-md-12">
           <a href="https://ne-peer.com" target="_blank">
             <div class="panel blog">
               <div class="panel-body">
                 <div class="sns">
                   <h3 class="title"><i class="fa fa-wordpress" aria-hidden="true"></i>Blog</h3>
-                  <p class="desc" lang="ja">中の人のプライベートな日記です。</p>
+                  <p class="desc" lang="ja">中の人のプライベートな日記です</p>
                 </div>
               </div>
             </div>
           </a>
-        </div>
+        </div> -->
       <!-- col-oneline -->
       </div>
     <!-- container -->

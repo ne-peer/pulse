@@ -9,6 +9,12 @@
               <div class="card-title h5">{{ post.fields.title }}</div>
               <div class="card-subtitle text-gray">{{ ( new Date(post.fields.publishDate)).toDateString() }}</div>
             </div>
+            <div class="card-image">
+              <img 
+                v-if="post.fields.heroImage.fields.file.url != undefined"
+                :src="post.fields.heroImage.fields.file.url"
+                class="img-responsive" alt="hero image">
+            </div>
             <div class="card-body">
               {{ post.fields.description }}
             </div>
@@ -57,8 +63,8 @@ export default {
 }
 
 .posts .card {
-  position:relative;
-  height: 250px;
+  /* position:relative; */
+  /* height: 250px; */
   background-color: #f8f9fa;
   cursor: pointer;
   margin-left: 4px;
@@ -67,8 +73,8 @@ export default {
 }
 
 .posts .card .card-footer {
-  position:absolute;
-  bottom: -18px;
+  /* position:absolute;
+  bottom: -18px; */
   width: 100%;
   text-align: right;
   vertical-align: bottom;

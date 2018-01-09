@@ -1,13 +1,6 @@
 <template>
   <section class="post">
     <header class="header">
-      <img
-        v-if="currentPost.fields.heroImage"
-        :src="currentPost.fields.heroImage.fields.file.url + '?fit=scale&w=350&h=196'"
-        :srcset="`${currentPost.fields.heroImage.fields.file.url}?w=350&h=87&fit=fill 350w, ${currentPost.fields.heroImage.fields.file.url}?w=1000&h=250&fit=fill 1000w, ${currentPost.fields.heroImage.fields.file.url}?w=2000&h=500&fit=fill 2000w`"
-        size="100vw"
-        :alt="currentPost.fields.heroImage.fields.description"
-      >
     </header>
 
     <article class="section">

@@ -5,10 +5,10 @@
     </div>
     <div class="detail">
       <h3>ne-peer</h3>
-      <p class="text-gray">
-        東京都在住でフリーランスエンジニアやってます。趣味でウェブアプリなどを作ったりなんかしています。<br>
-        スマートフォンやガジェットを集めたりする癖があったりします。
-      </p>
+      <div class="text-gray">
+        <div>東京在住でフリーランスエンジニアやってます。趣味でウェブアプリなどを作ったりなんかしています。</div>
+        <div>スマートフォンやガジェットを集める癖があったりします。</div>
+      </div>
     </div>
   </section>
 </template>
@@ -24,5 +24,9 @@
   max-width: 660px;
   padding: 20px;
   margin: 0 auto;
+}
+
+.profile .detail div div {
+  margin-top: 10px;
 }
 </style>

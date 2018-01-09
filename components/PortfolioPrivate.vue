@@ -5,14 +5,15 @@
         <div class="col-4 col-md-6 col-xs-12">
           <div class="card">
             <div class="card-image">
-              <img src="https://placehold.jp/500x250.png" class="img-responsive">
+              <img src="~/static/portfolio/deredorm.png" class="img-responsive" alt="deredorm">
             </div>
             <div class="card-header">
               <div class="card-title h5">Deredorm</div>
               <div class="card-subtitle text-gray">Website</div>
             </div>
             <div class="card-body">
-              Lorem ipsum dolor sit amet consectetur.
+              アイドルマスターシンデレラガールズ<br>
+              プロフィールライブラリ
             </div>
             <div class="card-footer">
               <button class="btn btn-primary">View</button>
@@ -24,14 +25,14 @@
         <div class="col-4 col-md-6 col-xs-12">
           <div class="card">
             <div class="card-image">
-              <img src="https://placehold.jp/500x250.png" class="img-responsive">
+              <img src="~/static/portfolio/dia.png" class="img-responsive">
             </div>
             <div class="card-header">
               <div class="card-title h5">Dia</div>
               <div class="card-subtitle text-gray">Bot</div>
             </div>
             <div class="card-body">
-              Lorem ipsum dolor sit amet.
+              Slack用 生徒会長Bot
             </div>
             <div class="card-footer">
               <button class="btn btn-primary">View</button>

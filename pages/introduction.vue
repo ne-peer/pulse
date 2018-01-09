@@ -30,6 +30,6 @@ export default {
 <style>
 .introduction .section {
   margin-top: 40px;
-  margin-bottom: 110px;
+  margin-bottom: 80px;
 }
 </style>

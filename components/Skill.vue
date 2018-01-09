@@ -1,88 +1,31 @@
 <template>
   <section class="skill-section">
-    <div class="panel">
-      <div class="panel-header">
-        <div class="panel-title" lang="ja">技能</div>
-      </div>
-      <div class="panel-body">
-        <div class="container">
-          <div class="columns">
-            <div class="column col-6 col-sm-12">
-              <div class="tile">
-                <div class="tile-content">
-                  <p class="tile-title"><h4>PHP</h4></p>
-                  <p class="tile-subtitle text-gray">
-                      Lorem ipsum dolor sit.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="column col-6 col-sm-12">
-              <div class="tile">
-                <div class="tile-content">
-                  <p class="tile-title"><h4>JavaScript</h4></p>
-                  <p class="tile-subtitle text-gray">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, veritatis?
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="column col-6 col-sm-12">
-              <div class="tile">
-                <div class="tile-content">
-                  <p class="tile-title"><h4>HTML & CSS</h4></p>
-                  <p class="tile-subtitle text-gray">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo minus debitis facere reprehenderit sit! Natus!
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="column col-6 col-sm-12">
-              <div class="tile">
-                <div class="tile-content">
-                  <p class="tile-title"><h4>Linux</h4></p>
-                  <p class="tile-subtitle text-gray">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  </p>
-                </div>
-              </div>
-            </div>
+    <div class="container">
+      <div class="columns">
+        <div class="col-10 col-mx-auto">
+          <div class="inner">
+            <img src="~/static/skill/php.svg" width="64" height="64" alt="php">
+            <img src="~/static/skill/html.svg" width="64" height="64" alt="html">
+            <img src="~/static/skill/css.svg" width="64" height="64" alt="css">
+            <img src="~/static/skill/js.svg" width="64" height="64" alt="js">
+            <img src="~/static/skill/node.svg" width="64" height="64" alt="nodejs">
+            <img src="~/static/skill/angular.svg" width="64" height="64" alt="angular">
+            <img src="~/static/skill/android.svg" width="64" height="64" alt="android">
+            <img src="~/static/skill/linux.svg" width="64" height="64" alt="linux">
           </div>
         </div>
       </div>
-      <div class="panel-footer"></div>
     </div>
-
   </section>
 </template>
 
 <style>
-section.skill-section {
+.skill-section {
   padding: 20px;
 }
 
-.skill-section .panel {
-  margin-bottom: 30px;
-  /* background-color: #727e96;
-  color: #f8f9fa; */
-}
-
-.description-indent {
-  margin-left: 20px;
-}
-
-p.tile-subtitle {
-  margin-left: 10px;
-}
-
-div.tile-icon {
-  margin: 20px;
-}
-
-div.tile-content {
-  margin-left: 10px;
+.skill-section .inner {
+  max-width: 512px;
+  margin: 0 auto;
 }
 </style>

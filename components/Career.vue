@@ -27,8 +27,19 @@
                 <a class="timeline-icon"></a>
               </div>
               <div class="timeline-content">
-                <p><b>2016.01</b></p>
-                <p class="note">一度目の転職（同業他社に移籍）</p>
+                <p><b>2016.03</b></p>
+                <p class="note">まじめにJavascriptの勉強を始める</p>
+              </div>
+            </div>
+          
+            <div class="timeline-item">
+              <div class="timeline-left">
+                <a class="timeline-icon"></a>
+              </div>
+              <div class="timeline-content">
+                <p><b>2015.01</b></p>
+                <p class="note">同業他社に移籍</p>
+                <p class="note">Androidの開発とかもやりはじめる</p>
               </div>
             </div>
           
@@ -38,19 +49,12 @@
               </div>
               <div class="timeline-content">
                 <p><b>2012.04</b></p>
+                <p class="note">情報系専門学校を卒業</p>
                 <p class="note">東京に引っ越し、IT系企業に入社</p>
+                <p class="note">PHPおよびWeb系の仕事をはじめる</p>
               </div>
             </div>
           
-            <div class="timeline-item" id="timeline-example-2">
-              <div class="timeline-left">
-                <a class="timeline-icon"></a>
-              </div>
-              <div class="timeline-content">
-                <p><b>2012.03</b></p>
-                <p class="note">情報系専門学校を卒業</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -61,5 +65,6 @@
 <style>
 .career .note {
   margin-left: 15px;
+  font-size: 15px;
 }
 </style>

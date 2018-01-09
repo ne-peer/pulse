@@ -24,7 +24,7 @@ export default {
 
 <style>
 .activity .section {
-  margin-top: 40px;
-  margin-bottom: 200px;
+  margin-top: 20px;
+  margin-bottom: 100px;
 }
 </style>

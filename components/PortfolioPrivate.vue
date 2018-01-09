@@ -16,8 +16,8 @@
               プロフィールライブラリ
             </div>
             <div class="card-footer">
-              <button class="btn btn-primary">View</button>
-              <button class="btn btn-link">Github</button>
+              <button class="btn btn-primary" v-on:click="openDeredorm">View</button>
+              <button class="btn btn-link" v-on:click="openDeredormGh">Github</button>
             </div>
           </div>
         </div>
@@ -35,8 +35,7 @@
               Slack用 生徒会長Bot
             </div>
             <div class="card-footer">
-              <button class="btn btn-primary">View</button>
-              <button class="btn btn-link">Github</button>
+              <button class="btn btn-link" v-on:click="openDiaGh">Github</button>
             </div>
           </div>
         </div>
@@ -47,9 +46,26 @@
   </section>
 </template>
 
+<script>
+export default {
+  methods: {
+    openDeredorm: () => {
+      window.open('http://deredorm.ne-peer.com');
+    },
+    openDeredormGh: () => {
+      window.open('https://github.com/ne-peer/deredorm');
+    },
+    openDiaGh: () => {
+      window.open('https://github.com/ne-peer/dia');
+    }
+  }
+}
+</script>
+
 <style>
 .portfolio-private .card {
   margin: 5px;
+  background-color: #f8f9fa;
 }
 
 .portfolio-private .card-body {

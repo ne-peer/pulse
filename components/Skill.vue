@@ -25,7 +25,8 @@
 }
 
 .skill-section .inner {
-  max-width: 512px;
+  max-width: 524px;
   margin: 0 auto;
+  padding-left: 12px;
 }
 </style>

@@ -5,9 +5,9 @@
     </div>
     <div class="detail">
       <h3>ne-peer</h3>
-      <div class="text-gray">
-        <div>東京在住でフリーランスエンジニアやってます。趣味でウェブアプリなどを作ったりなんかしています。</div>
-        <div>スマートフォンやガジェットを集める癖があったりします。</div>
+      <div class="description text-gray">
+        <div class="row">東京在住でフリーランスエンジニアやってます。趣味でウェブアプリなどを作ったりなんかしています。</div>
+        <div class="row">スマートフォンやガジェットを集める癖があったりします。</div>
       </div>
     </div>
   </section>
@@ -26,7 +26,11 @@
   margin: 0 auto;
 }
 
-.profile .detail div div {
+.profile .detail .description {
+  padding-top: 10px;
+}
+
+.profile .detail div.row {
   margin-top: 10px;
 }
 </style>

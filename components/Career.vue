@@ -2,7 +2,7 @@
   <section class="career">
     <div class="container">
       <div class="columns">
-        <div class="column col-10 col-mx-auto">
+        <div class="column col-8 col-sm-10 col-mx-auto">
           <div class="timeline">
             <div class="timeline-item">
               <div class="timeline-left">

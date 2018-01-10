@@ -1,52 +1,48 @@
 <template>
-  <div>
-    <nuxt/>
+  <div class="outer">
+    <script src="https://use.fontawesome.com/f8cbf6b46f.js"></script>
+    <div class="content">
+      <div class="nav">
+        <Navbar/>
+      </div>
+      <div class="main-contents">
+        <nuxt/>
+      </div>
+    </div>
+    <PulseFooter/>
   </div>
 </template>
 
+<script>
+import Navbar from '~/components/Navbar.vue'
+import PulseFooter from '~/components/PulseFooter.vue'
+
+export default {
+  components: {
+    Navbar, PulseFooter
+  }
+}
+</script>
+
 <style>
-html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+.outer {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
-  box-sizing: border-box;
-  margin: 0;
+.content {
+  max-width: 980px;
+  margin: 0 auto;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+.bc {
+  margin-bottom: 40px;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+.nav {
+  margin-bottom: 40px;
 }
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.main-contents {
+  min-height: 750px;
 }
 </style>

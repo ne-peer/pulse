@@ -1,16 +1,16 @@
 <template>
-  <section class="container">
+  <section class="index">
     <div>
-      <logo/>
-      <h1 class="title">
-        pulse-portal-site
-      </h1>
-      <h2 class="subtitle">
-        Portal site of Pulse.
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
+      <div class="logo">
+        <logo/>
+      </div>
+      <div class="main container">
+        <div class="columns">
+          <div class="column col-8 col-mx-auto">
+            <p class="title">Pulse</p>
+            <p class="subtitle">Portal site of Pulse.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -27,32 +27,25 @@ export default {
 </script>
 
 <style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+section.index .logo {
+  margin-bottom: 25px;
+  width: 200px;
+  margin: 0 auto;
 }
 
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+section.index .title {
   display: block;
   font-weight: 300;
-  font-size: 100px;
+  font-size: 64px;
   color: #35495e;
   letter-spacing: 1px;
 }
 
-.subtitle {
+section.index .subtitle {
   font-weight: 300;
-  font-size: 42px;
+  font-size: 24px;
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
 }
 </style>

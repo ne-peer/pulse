@@ -7,14 +7,14 @@
       <div class="btn-group btn-group-block">
         <div class="container grid-lg">
           <div class="columns">
-            <nuxt-link tag="button" to="/introduction" class="btn">
-              <i class="fa fa-user" aria-hidden="true"></i>
-              <span class="hide-md">About</span>
-            </nuxt-link>
-
-            <nuxt-link tag="button" to="/posts" class="btn">
+            <nuxt-link tag="button" to="/blog" class="btn">
               <i class="fa fa-bookmark" aria-hidden="true"></i>
               <span class="hide-md">Blog</span>
+            </nuxt-link>
+
+            <nuxt-link tag="button" to="/review" class="btn">
+              <i class="fa fa-dollar" aria-hidden="true"></i>
+              <span class="hide-md">Reviews</span>
             </nuxt-link>
 
             <nuxt-link tag="button" to="/activity" class="btn">
@@ -22,9 +22,9 @@
               <span class="hide-md">Portfolio</span>
             </nuxt-link>
 
-            <nuxt-link tag="button" to="/contact" class="btn">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-              <span class="hide-md">Contact</span>
+            <nuxt-link tag="button" to="/introduction" class="btn">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <span class="hide-md">About</span>
             </nuxt-link>
           </div>
         </div>

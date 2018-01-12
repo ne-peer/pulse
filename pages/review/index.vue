@@ -1,10 +1,10 @@
 <template>
-  <section class="posts">
+  <section class="review">
     <div class="container">
 
       <div class="columns">
-        <div class="col-4 col-md-6 col-sm-12" v-for="post in posts">
-          <nuxt-link tag="div" :to="{ name: 'posts-slug', params: { slug: post.fields.slug }}" class="card">
+        <div class="col-4 col-md-6 col-sm-12" v-for="post in review">
+          <nuxt-link tag="div" :to="{ name: 'review-slug', params: { slug: post.fields.slug }}" class="card">
             <div class="card-header">
               <div class="card-title h5">{{ post.fields.title }}</div>
               <div class="card-subtitle text-gray">{{ ( new Date(post.fields.publishDate)).toDateString() }}</div>
@@ -39,17 +39,17 @@ export default {
   },
   data () {
     return {
-      posts: []
+      review: []
     }
   },
   asyncData ({ env }) {
     return client.getEntries({
-      // fetch all blog posts sorted by creation date
-      'content_type': env.CTF_BLOG_POST_TYPE_ID,
+      // fetch all blog review sorted by creation date
+      'content_type': 'reviewPost', 
       order: '-fields.publishDate'
     }).then(entries => {
       return {
-        posts: entries.items
+        review: entries.items
       }
     }).catch(console.error)
   }
@@ -57,12 +57,12 @@ export default {
 </script>
 
 <style>
-.posts {
+.review {
   margin-left: 14px;
   margin-right: 14px;
 }
 
-.posts .card {
+.review .card {
   /* position:relative; */
   /* height: 250px; */
   background-color: #f8f9fa;
@@ -72,7 +72,7 @@ export default {
   margin-bottom: 8px;
 }
 
-.posts .card .card-footer {
+.review .card .card-footer {
   /* position:absolute;
   bottom: -18px; */
   width: 100%;

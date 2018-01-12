@@ -9,22 +9,17 @@
           <div class="columns">
             <nuxt-link tag="button" to="/blog" class="btn">
               <i class="fa fa-bookmark" aria-hidden="true"></i>
-              <span class="hide-md">Blog</span>
+              <span class="hide-sm">Blog</span>
             </nuxt-link>
 
             <nuxt-link tag="button" to="/review" class="btn">
               <i class="fa fa-dollar" aria-hidden="true"></i>
-              <span class="hide-md">Reviews</span>
-            </nuxt-link>
-
-            <nuxt-link tag="button" to="/portfolio" class="btn">
-              <i class="fa fa-diamond" aria-hidden="true"></i>
-              <span class="hide-md">Portfolio</span>
+              <span class="hide-sm">Reviews</span>
             </nuxt-link>
 
             <nuxt-link tag="button" to="/about" class="btn">
               <i class="fa fa-user" aria-hidden="true"></i>
-              <span class="hide-md">About</span>
+              <span class="hide-sm">About</span>
             </nuxt-link>
           </div>
         </div>

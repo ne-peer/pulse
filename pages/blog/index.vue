@@ -1,31 +1,22 @@
 <template>
   <section class="blog">
-    <div class="container">
 
+    <div class="container">
       <div class="columns">
-        <div class="col-4 col-md-6 col-sm-12" v-for="post in blog">
-          <nuxt-link tag="div" :to="{ name: 'blog-slug', params: { slug: post.fields.slug }}" class="card">
-            <div class="card-header">
-              <div class="card-title h5">{{ post.fields.title }}</div>
-              <div class="card-subtitle text-gray">{{ ( new Date(post.fields.publishDate)).toDateString() }}</div>
-            </div>
-            <div class="card-image">
-              <img 
-                v-if="post.fields.heroImage.fields.file.url != undefined"
-                :src="post.fields.heroImage.fields.file.url"
-                class="img-responsive" alt="hero image">
-            </div>
-            <div class="card-body">
-              {{ post.fields.description }}
-            </div>
-            <div class="card-footer">
-              <p>Read More</p>
+        <div class="column col-12" v-for="post in blog">
+          <nuxt-link tag="div" :to="{ name: 'blog-slug', params: { slug: post.fields.slug }}">
+            <div class="panel">
+              <div class="panel-body">
+                <h4>{{ post.fields.title }}</h4>
+                <div class="description text-gray">{{ post.fields.description }}</div>
+                <div class="action">Read More</div>
+              </div>
             </div>
           </nuxt-link>
         </div>
       </div>
-      
     </div>
+    
   </section>
 </template>
 
@@ -62,22 +53,20 @@ export default {
   margin-right: 14px;
 }
 
-.blog .card {
-  /* position:relative; */
-  /* height: 250px; */
-  background-color: #f8f9fa;
+.blog .panel {
+  margin-bottom: 10px;
+  padding: 20px;
   cursor: pointer;
-  margin-left: 4px;
-  margin-right: 4px;
-  margin-bottom: 8px;
 }
 
-.blog .card .card-footer {
-  /* position:absolute;
-  bottom: -18px; */
-  width: 100%;
+.blog .description {
+  letter-spacing: 2px;
+  text-align: justify;
+}
+
+.blog .action {
+  margin-top: 10px;
   text-align: right;
-  vertical-align: bottom;
-  color: #00acaa;
+  color: #009391;
 }
 </style>

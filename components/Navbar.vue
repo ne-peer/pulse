@@ -17,12 +17,12 @@
               <span class="hide-md">Reviews</span>
             </nuxt-link>
 
-            <nuxt-link tag="button" to="/activity" class="btn">
+            <nuxt-link tag="button" to="/portfolio" class="btn">
               <i class="fa fa-diamond" aria-hidden="true"></i>
               <span class="hide-md">Portfolio</span>
             </nuxt-link>
 
-            <nuxt-link tag="button" to="/introduction" class="btn">
+            <nuxt-link tag="button" to="/about" class="btn">
               <i class="fa fa-user" aria-hidden="true"></i>
               <span class="hide-md">About</span>
             </nuxt-link>

@@ -5,3 +5,27 @@
 .page-enter, .page-leave-active {
   opacity: 0;
 }
+
+/**
+ * Markdown用
+ */
+.md-preview {
+  text-align: justify;
+}
+
+.md-preview h1,h2,h3 {
+  margin-top: 60px;
+}
+
+.md-preview h1,h2,h3 {
+  margin-top: 40px;
+}
+
+.md-preview hr {
+	height: 6px;
+	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+  border: 0;
+
+  margin-top: 40px;
+  margin-bottom: 20px;
+}

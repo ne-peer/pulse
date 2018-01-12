@@ -9,7 +9,7 @@
         <p class="headline__date has-text-right">{{ ( new Date(currentPost.fields.publishDate)).toDateString() }}</p>
       </div>
       
-      <vue-markdown class="content">{{ currentPost.fields.body }}</vue-markdown>
+      <vue-markdown class="content md-preview">{{ currentPost.fields.body }}</vue-markdown>
 
       <nav class="pagination is-centered" role="navigation" aria-label="pagination">
         <div class="container">

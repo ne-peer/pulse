@@ -9,7 +9,7 @@
         <p class="headline__date has-text-right">{{ ( new Date(currentPost.fields.publishDate)).toDateString() }}</p>
       </div>
       
-      <vue-markdown class="content">{{ currentPost.fields.body }}</vue-markdown>
+      <vue-markdown class="content md-preview">{{ currentPost.fields.body }}</vue-markdown>
 
       <nav class="pagination is-centered" role="navigation" aria-label="pagination">
         <div class="container">
@@ -58,7 +58,7 @@
     },
     asyncData ({ env, params }) {
       return client.getEntries({
-        'content_type': env.CTF_BLOG_POST_TYPE_ID,
+        'content_type': 'reviewPost',
         order: '-fields.publishDate'
       }).then(entries => {
         const posts = entries.items

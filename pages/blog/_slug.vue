@@ -15,10 +15,14 @@
         <div class="container">
           <div class="columns col-oneline">
             <div class="column col-6">
-              <nuxt-link v-if="prevPost" class="pagination-previous" :to="prevPost.fields.slug">&laquo; {{ prevPost.fields.title }}</nuxt-link>
+              <nuxt-link v-if="prevPost" class="pagination-previous page-nav" :to="prevPost.fields.slug">
+                <i class="icon icon-arrow-left"></i> 前の記事
+              </nuxt-link>
             </div>
             <div class="column col-6" style="text-align:right;">
-              <nuxt-link v-if="nextPost" class="pagination-next" :to="nextPost.fields.slug">{{ nextPost.fields.title }} &raquo;</nuxt-link>
+              <nuxt-link v-if="nextPost" class="pagination-next page-nav" :to="nextPost.fields.slug">
+                次の記事 <i class="icon icon-arrow-right"></i>
+              </nuxt-link>
             </div>
           </div>
         </div>
@@ -140,5 +144,15 @@
 .post pre code {
   color: #eeeeee;
   background: transparent;
+}
+
+.post .page-nav {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.post .page-nav i {
+  margin-top: -2px;
 }
 </style>

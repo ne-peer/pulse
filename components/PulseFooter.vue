@@ -42,6 +42,7 @@ footer .mail {
   font-weight: 300;
   font-size: 12px;
   letter-spacing: 1px;
+  padding-right: 8px;
 }
 
 footer .attribution {

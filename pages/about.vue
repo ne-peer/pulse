@@ -5,10 +5,6 @@
       <Profile/>
       <Skill/>
     </div>
-    <div class="divider text-center" data-content="経歴"></div>
-    <div class="section">
-      <Career/>
-    </div>
     <div class="divider text-center" data-content="過去に作ったもの" lang="ja"></div>
     <div class="section">
         <PortfolioPrivate/>
@@ -22,14 +18,13 @@
 
 <script>
 import Profile from '~/components/Profile.vue'
-import Career from '~/components/Career.vue'
 import Skill from '~/components/Skill.vue'
 import PortfolioPrivate from '~/components/PortfolioPrivate.vue'
 import Social from '~/components/Social.vue'
 
 export default {
   components: {
-    Career, Skill, Profile, PortfolioPrivate, Social
+    Skill, Profile, PortfolioPrivate, Social
   }
 }
 </script>

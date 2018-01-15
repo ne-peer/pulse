@@ -11,22 +11,42 @@
       
       <vue-markdown class="content md-preview">{{ currentPost.fields.body }}</vue-markdown>
 
-      <nav class="pagination is-centered" role="navigation" aria-label="pagination">
-        <div class="container">
-          <div class="columns col-oneline">
-            <div class="column col-6">
-              <nuxt-link v-if="prevPost" class="pagination-previous page-nav" :to="prevPost.fields.slug">
-                <i class="icon icon-arrow-left"></i> 前の記事
-              </nuxt-link>
-            </div>
-            <div class="column col-6" style="text-align:right;">
-              <nuxt-link v-if="nextPost" class="pagination-next page-nav" :to="nextPost.fields.slug">
-                次の記事 <i class="icon icon-arrow-right"></i>
-              </nuxt-link>
-            </div>
-          </div>
-        </div>
-      </nav>
+<div class="container">
+  <div class="columns">
+    <div class="column hide-sm">
+      <ul class="pagination">
+        <li class="page-item page-next" style="text-align:left;">
+          <nuxt-link v-if="nextPost" class="pagination-next page-nav" :to="nextPost.fields.slug">
+            <div class="page-item-subtitle">Next</div>
+            <div class="page-item-title h5">{{ nextPost.fields.title }}</div>
+          </nuxt-link>
+        </li>
+        <li class="page-item page-prev" style="text-align:right;">
+          <nuxt-link v-if="prevPost" class="pagination-previous page-nav" :to="prevPost.fields.slug">
+            <div class="page-item-subtitle">Previous</div>
+            <div class="page-item-title h5">{{ prevPost.fields.title }}</div>
+          </nuxt-link>
+        </li>
+      </ul>
+    </div>
+    <div class="column show-sm">
+      <ul class="pagination">
+        <li class="page-item page-next" style="text-align:left;">
+          <nuxt-link v-if="nextPost" class="pagination-next page-nav" :to="nextPost.fields.slug">
+            <div class="page-item-subtitle">Next</div>
+            <div class="page-item-title h6">次の記事</div>
+          </nuxt-link>
+        </li>
+        <li class="page-item page-prev" style="text-align:right;">
+          <nuxt-link v-if="prevPost" class="pagination-previous page-nav" :to="prevPost.fields.slug">
+            <div class="page-item-subtitle">Previous</div>
+            <div class="page-item-title h6">前の記事</div>
+          </nuxt-link>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
 
     </article>
 

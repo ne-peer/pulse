@@ -1,22 +1,40 @@
 <template>
   <section class="blog">
 
-    <div class="container">
-      <div class="columns">
-        <div class="column col-12" v-for="post in blog">
-          <nuxt-link tag="div" :to="{ name: 'blog-slug', params: { slug: post.fields.slug }}">
-            <div class="panel">
-              <div class="panel-body">
-                <h4>{{ post.fields.title }}</h4>
-                <div class="description text-gray">{{ post.fields.description }}</div>
-                <div class="action">Read More</div>
-              </div>
+      <paginate name="blog" :list="blog" :per="1" tag="div">
+        <div class="container">
+          <div class="columns">
+            <div class="column col-12" v-for="post in paginated('blog')">
+              <nuxt-link tag="div" :to="{ name: 'blog-slug', params: { slug: post.fields.slug }}">
+                <div class="panel">
+                  <div class="panel-body">
+                    <h4>{{ post.fields.title }}</h4>
+                    <div class="description text-gray">{{ post.fields.description }}</div>
+                    <div class="action">Read More</div>
+                  </div>
+                </div>
+              </nuxt-link>
             </div>
-          </nuxt-link>
+          </div>
         </div>
-      </div>
-    </div>
-    
+      </paginate>
+      
+      <paginate-links
+        @change="onLangsPageChange"
+        for="blog"
+        :show-step-links="true"
+        :step-links="{
+          next: 'Next',
+          prev: 'Prev'
+        }"
+        :classes="{
+          'ul': 'pagination',
+          'li': 'page-item',
+          '.next > a': 'next-link',
+          '.prev > a': ['prev-link', 'another-class']
+        }"
+      ></paginate-links>
+      
   </section>
 </template>
 
@@ -30,7 +48,8 @@ export default {
   },
   data () {
     return {
-      blog: []
+      blog: [],
+      paginate: ['blog']
     }
   },
   asyncData ({ env }) {
@@ -43,6 +62,14 @@ export default {
         blog: entries.items
       }
     }).catch(console.error)
+  },
+  methods: {
+    // ページング
+    onLangsPageChange (toPage, fromPage) {
+      if (this.$refs.paginator) {
+        this.$refs.paginator.goToPage(toPage)
+      }
+    }
   }
 }
 </script>
@@ -68,5 +95,9 @@ export default {
   margin-top: 10px;
   text-align: right;
   color: #009391;
+}
+
+.blog .page-item {
+  cursor: pointer;
 }
 </style>

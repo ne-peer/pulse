@@ -59,5 +59,8 @@ module.exports = {
       }
     }
   },
-  plugins: ['~plugins/contentful']
+  plugins: [
+    '~plugins/contentful',
+    '~plugins/paginate'
+  ]
 }

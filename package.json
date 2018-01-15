@@ -17,7 +17,8 @@
     "contentful-management": "^4.1.2",
     "nuxt": "^1.0.0-rc11",
     "spectre.css": "^0.4.5",
-    "vue-markdown": "^2.2.4"
+    "vue-markdown": "^2.2.4",
+    "vue-paginate": "^3.5.1"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",

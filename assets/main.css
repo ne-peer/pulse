@@ -13,11 +13,11 @@
   text-align: justify;
 }
 
-.md-preview h1,h2,h3 {
+.md-preview h1, .md-preview h2, .md-preview h3 {
   margin-top: 60px;
 }
 
-.md-preview h1,h2,h3 {
+.md-preview h1, .md-preview h2, .md-preview h3 {
   margin-top: 40px;
 }
 

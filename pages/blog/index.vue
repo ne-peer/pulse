@@ -1,7 +1,7 @@
 <template>
   <section class="blog">
 
-      <paginate name="blog" :list="blog" :per="1" tag="div">
+      <paginate name="blog" :list="blog" :per="6" tag="div">
         <div class="container">
           <div class="columns">
             <div class="column col-12" v-for="post in paginated('blog')">
@@ -84,6 +84,10 @@ export default {
   margin-bottom: 10px;
   padding: 20px;
   cursor: pointer;
+}
+
+.blog .panel-body {
+  padding-top: 8px;
 }
 
 .blog .description {

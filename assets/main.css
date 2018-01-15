@@ -29,3 +29,10 @@
   margin-top: 40px;
   margin-bottom: 20px;
 }
+
+.md-preview img {
+  max-width: 100%;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}

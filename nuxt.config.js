@@ -9,19 +9,19 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'site_name', content: 'Pulse Freelance' },
-      { name: 'keywords', content: 'Pulse,パルス,フリーランス' },
-      { name: 'description', content: 'フリーランス Pulse のポートフォリオサイトです。' },
+      { name: 'site_name', content: 'Pulse' },
+      { name: 'keywords', content: 'Pulse,パルス,ne-peer' },
+      { name: 'description', content: '@ne-peerの個人的なサイトです。' },
       { name: 'og:type', content: 'website' },
-      { name: 'og:site_name', content: 'Pulse Freelance' },
-      { name: 'og:title', content: 'Pulse Freelance' },
-      { name: 'og:description', content: 'フリーランス Pulse のポートフォリオサイトです。' }
+      { name: 'og:site_name', content: 'Pulse' },
+      { name: 'og:title', content: 'Pulse' },
+      { name: 'og:description', content: '@ne-peerの個人的なサイトです。' }
       // { name: 'og:url', content: 'https://example.com' },
       // { name: 'og:image', content: '' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'icon', hrefrang: 'ja', href: 'https://example.com' }
+      { rel: 'icon', hrefrang: 'ja', href: 'https://ne-peer.xyz' }
     ]
   },
   css: [

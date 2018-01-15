@@ -26,7 +26,7 @@ import {createClient} from '~/plugins/contentful.js'
 const client = createClient()
 export default {
   head: {
-    title: 'Post'
+    title: 'Pulse | 日記'
   },
   data () {
     return {

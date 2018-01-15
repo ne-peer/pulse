@@ -25,7 +25,10 @@ import Social from '~/components/Social.vue'
 export default {
   components: {
     Skill, Profile, PortfolioPrivate, Social
-  }
+  },
+  head: {
+    title: 'Pulse | About'
+  },
 }
 </script>
 

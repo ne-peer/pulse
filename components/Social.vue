@@ -27,19 +27,6 @@
             </div>
           </a>
         </div>
-        
-        <!-- <div class="col-6 col-md-12">
-          <a href="https://ne-peer.com" target="_blank">
-            <div class="panel blog">
-              <div class="panel-body">
-                <div class="sns">
-                  <h3 class="title"><i class="fa fa-wordpress" aria-hidden="true"></i>Blog</h3>
-                  <p class="desc" lang="ja">中の人のプライベートな日記です</p>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div> -->
       <!-- col-oneline -->
       </div>
     <!-- container -->

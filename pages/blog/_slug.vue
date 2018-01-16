@@ -61,7 +61,7 @@
   export default {
     head () {
       return {
-        title: this.currentPost.fields.title,
+        title: 'Pulse Blog | ' + this.currentPost.fields.title,
         meta: [
           {
             hid: 'description',

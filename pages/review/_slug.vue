@@ -6,9 +6,15 @@
     <article class="article-section">
       <div class="headline">
         <h1 class="title has-text-centered">{{ currentPost.fields.title }}</h1>
-        <p class="headline__date has-text-right">{{ ( new Date(currentPost.fields.publishDate)).toDateString() }}</p>
+        <p>
+          {{ (new Date(currentPost.fields.publishDate)).getFullYear() }}年 
+          {{ (new Date(currentPost.fields.publishDate)).getMonth() }}月 
+          {{ (new Date(currentPost.fields.publishDate)).getDay() }}日
+        </p>
       </div>
-      
+
+      <div class="pulse-border"></div>
+            
       <vue-markdown class="content md-preview">{{ currentPost.fields.body }}</vue-markdown>
       
     </article>

@@ -20,6 +20,7 @@
       </paginate>
       
       <paginate-links
+        v-scroll-to="{ element: '.outer' }"
         @change="onLangsPageChange"
         for="blog"
         :show-step-links="true"

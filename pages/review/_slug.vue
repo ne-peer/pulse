@@ -3,7 +3,7 @@
     <header class="header">
     </header>
 
-    <article class="section">
+    <article class="article-section">
       <div class="headline">
         <h1 class="title has-text-centered">{{ currentPost.fields.title }}</h1>
         <p class="headline__date has-text-right">{{ ( new Date(currentPost.fields.publishDate)).toDateString() }}</p>
@@ -127,5 +127,9 @@
 .post pre code {
   color: #eeeeee;
   background: transparent;
+}
+
+.post .article-section {
+  padding-bottom: 60px;
 }
 </style>

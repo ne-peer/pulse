@@ -68,7 +68,7 @@
           'ul': 'pagination',
           'li': 'page-item',
           '.next > a': 'next-link',
-          '.prev > a': ['prev-link', 'another-class']
+          '.prev > a': 'prev-link'
         }"
       ></paginate-links>
       

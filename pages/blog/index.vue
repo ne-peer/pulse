@@ -7,6 +7,13 @@
             <div class="column col-12" v-for="post in paginated('blog')">
               <nuxt-link tag="div" :to="{ name: 'blog-slug', params: { slug: post.fields.slug }}">
                 <div class="panel">
+  <div class="panel-header">
+                            <div class="publish-date">
+                              {{ (new Date(post.fields.publishDate)).getFullYear() }}年 
+                              {{ (new Date(post.fields.publishDate)).getMonth() + 1 }}月 
+                              {{ (new Date(post.fields.publishDate)).getDay() }}日
+                            </div>
+  </div>
                   <div class="panel-body">
                     <div class="container">
                       <div class="columns">
@@ -123,8 +130,18 @@ export default {
   cursor: pointer;
 }
 
+.blog .panel-header {
+  margin-bottom: -22px;
+}
+
 .blog .panel-body {
   padding-top: 8px;
+}
+
+.blog .publish-date {
+  color: #777777;
+  font-size: 14px;
+  padding-bottom: 10px;
 }
 
 .blog .description {

@@ -6,9 +6,9 @@
     <article class="article-section">
       <div class="headline">
         <h1 class="title has-text-centered">{{ currentPost.fields.title }}</h1>
-        <p>
+        <p class="publish-date">
           {{ (new Date(currentPost.fields.publishDate)).getFullYear() }}年 
-          {{ (new Date(currentPost.fields.publishDate)).getMonth() }}月 
+          {{ (new Date(currentPost.fields.publishDate)).getMonth() + 1 }}月 
           {{ (new Date(currentPost.fields.publishDate)).getDay() }}日
         </p>
       </div>
@@ -103,8 +103,8 @@
   margin-bottom: 1.5rem;
 }
 
-.post .headline__date {
-  font-size: .8rem;
+.post .publish-date {
+  color: #00ACAA;
 }
 
 .post .content {

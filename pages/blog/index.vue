@@ -8,9 +8,31 @@
               <nuxt-link tag="div" :to="{ name: 'blog-slug', params: { slug: post.fields.slug }}">
                 <div class="panel">
                   <div class="panel-body">
-                    <h4>{{ post.fields.title }}</h4>
-                    <div class="description text-gray">{{ post.fields.description }}</div>
-                    <div class="action">Read More</div>
+                    <div class="container">
+                      <div class="columns">
+                        <div class="column show-sm photo img-center">
+                          <img
+                            v-if="post.fields.heroImage"
+                            class="img-responsive"
+                            alt="heading photo"
+                            :src="post.fields.heroImage.fields.file.url">
+                        </div>
+                      </div>
+                      <div class="columns">
+                        <div class="column col-4 hide-sm photo">
+                          <img
+                            v-if="post.fields.heroImage"
+                            class="img-responsive"
+                            alt="heading photo"
+                            :src="post.fields.heroImage.fields.file.url">
+                        </div>
+                        <div class="column col-18 col-sm-12 description">
+                          <h4>{{ post.fields.title }}</h4>
+                          <div class="description text-gray">{{ post.fields.description }}</div>
+                          <div class="action">Read More</div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </nuxt-link>
@@ -104,5 +126,15 @@ export default {
 
 .blog .page-item {
   cursor: pointer;
+}
+
+.blog .photo {
+  max-width: 192px;
+}
+
+.blog .img-center {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
 }
 </style>

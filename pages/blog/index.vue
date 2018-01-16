@@ -18,20 +18,34 @@
                             :src="post.fields.heroImage.fields.file.url">
                         </div>
                       </div>
-                      <div class="columns">
-                        <div class="column col-4 hide-sm photo">
-                          <img
-                            v-if="post.fields.heroImage"
-                            class="img-responsive"
-                            alt="heading photo"
-                            :src="post.fields.heroImage.fields.file.url">
+
+                      <template v-if="post.fields.heroImage">
+                        <!-- 見出し画像あり -->
+                        <div class="columns">
+                          <div class="column col-18 col-sm-12 description">
+                            <h4>{{ post.fields.title }}</h4>
+                            <div class="description text-gray">{{ post.fields.description }}</div>
+                            <div class="action">Read More</div>
+                          </div>
+                          <div class="column col-4 hide-sm photo">
+                            <img
+                              v-if="post.fields.heroImage"
+                              class="img-responsive"
+                              alt="heading photo"
+                              :src="post.fields.heroImage.fields.file.url">
+                          </div>
                         </div>
-                        <div class="column col-18 col-sm-12 description">
-                          <h4>{{ post.fields.title }}</h4>
-                          <div class="description text-gray">{{ post.fields.description }}</div>
-                          <div class="action">Read More</div>
+                      </template>
+                      <template v-else>
+                        <!-- 見出し画像なし -->
+                        <div class="columns">
+                          <div class="column col-12 description">
+                            <h4>{{ post.fields.title }}</h4>
+                            <div class="description text-gray">{{ post.fields.description }}</div>
+                            <div class="action">Read More</div>
+                          </div>
                         </div>
-                      </div>
+                      </template>
                     </div>
                   </div>
                 </div>
@@ -105,7 +119,7 @@ export default {
 
 .blog .panel {
   margin-bottom: 10px;
-  padding: 20px;
+  padding: 2%;
   cursor: pointer;
 }
 

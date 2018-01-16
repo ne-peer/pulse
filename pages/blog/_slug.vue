@@ -11,42 +11,42 @@
       
       <vue-markdown class="content md-preview">{{ currentPost.fields.body }}</vue-markdown>
 
-<div class="container">
-  <div class="columns">
-    <div class="column hide-sm">
-      <ul class="pagination">
-        <li class="page-item page-next" style="text-align:left;">
-          <nuxt-link v-if="nextPost" class="pagination-next page-nav" :to="nextPost.fields.slug">
-            <div class="page-item-subtitle">Next</div>
-            <div class="page-item-title h5">{{ nextPost.fields.title }}</div>
-          </nuxt-link>
-        </li>
-        <li class="page-item page-prev" style="text-align:right;">
-          <nuxt-link v-if="prevPost" class="pagination-previous page-nav" :to="prevPost.fields.slug">
-            <div class="page-item-subtitle">Previous</div>
-            <div class="page-item-title h5">{{ prevPost.fields.title }}</div>
-          </nuxt-link>
-        </li>
-      </ul>
-    </div>
-    <div class="column show-sm">
-      <ul class="pagination">
-        <li class="page-item page-next" style="text-align:left;">
-          <nuxt-link v-if="nextPost" class="pagination-next page-nav" :to="nextPost.fields.slug">
-            <div class="page-item-subtitle">Next</div>
-            <div class="page-item-title h6">次の記事</div>
-          </nuxt-link>
-        </li>
-        <li class="page-item page-prev" style="text-align:right;">
-          <nuxt-link v-if="prevPost" class="pagination-previous page-nav" :to="prevPost.fields.slug">
-            <div class="page-item-subtitle">Previous</div>
-            <div class="page-item-title h6">前の記事</div>
-          </nuxt-link>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
+      <div class="container">
+        <div class="columns">
+          <div class="column hide-sm">
+            <ul class="pagination">
+              <li class="page-item page-next" style="text-align:left;">
+                <nuxt-link v-if="nextPost" class="pagination-next page-nav" :to="nextPost.fields.slug">
+                  <div class="page-item-subtitle">Next</div>
+                  <div class="page-item-title h5">{{ nextPost.fields.title }}</div>
+                </nuxt-link>
+              </li>
+              <li class="page-item page-prev" style="text-align:right;">
+                <nuxt-link v-if="prevPost" class="pagination-previous page-nav" :to="prevPost.fields.slug">
+                  <div class="page-item-subtitle">Previous</div>
+                  <div class="page-item-title h5">{{ prevPost.fields.title }}</div>
+                </nuxt-link>
+              </li>
+            </ul>
+          </div>
+          <div class="column show-sm">
+            <ul class="pagination">
+              <li class="page-item page-next" style="text-align:left;">
+                <nuxt-link v-if="nextPost" class="pagination-next page-nav" :to="nextPost.fields.slug">
+                  <div class="page-item-subtitle">Next</div>
+                  <div class="page-item-title h6">次の記事</div>
+                </nuxt-link>
+              </li>
+              <li class="page-item page-prev" style="text-align:right;">
+                <nuxt-link v-if="prevPost" class="pagination-previous page-nav" :to="prevPost.fields.slug">
+                  <div class="page-item-subtitle">Previous</div>
+                  <div class="page-item-title h6">前の記事</div>
+                </nuxt-link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
     </article>
 

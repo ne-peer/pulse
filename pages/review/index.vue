@@ -7,7 +7,11 @@
           <nuxt-link tag="div" :to="{ name: 'review-slug', params: { slug: post.fields.slug }}" class="card">
             <div class="card-header">
               <div class="card-title h5">{{ post.fields.title }}</div>
-              <div class="card-subtitle text-gray">{{ ( new Date(post.fields.publishDate)).toDateString() }}</div>
+              <div class="card-subtitle text-gray">
+                {{ (new Date(post.fields.publishDate)).getFullYear() }}年 
+                {{ (new Date(post.fields.publishDate)).getMonth() + 1 }}月 
+                {{ (new Date(post.fields.publishDate)).getDay() }}日
+              </div>
             </div>
             <div class="card-image">
               <img 

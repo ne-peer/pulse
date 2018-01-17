@@ -7,10 +7,53 @@
             <div class="column col-12" v-for="post in paginated('blog')">
               <nuxt-link tag="div" :to="{ name: 'blog-slug', params: { slug: post.fields.slug }}">
                 <div class="panel">
+  <div class="panel-header">
+                            <div class="publish-date">
+                              {{ (new Date(post.fields.publishDate)).getFullYear() }}年 
+                              {{ (new Date(post.fields.publishDate)).getMonth() + 1 }}月 
+                              {{ (new Date(post.fields.publishDate)).getDay() }}日
+                            </div>
+  </div>
                   <div class="panel-body">
-                    <h4>{{ post.fields.title }}</h4>
-                    <div class="description text-gray">{{ post.fields.description }}</div>
-                    <div class="action">Read More</div>
+                    <div class="container">
+                      <div class="columns">
+                        <div class="column show-sm photo img-center">
+                          <img
+                            v-if="post.fields.heroImage"
+                            class="img-responsive"
+                            alt="heading photo"
+                            :src="post.fields.heroImage.fields.file.url">
+                        </div>
+                      </div>
+
+                      <template v-if="post.fields.heroImage">
+                        <!-- 見出し画像あり -->
+                        <div class="columns">
+                          <div class="column col-18 col-sm-12 description">
+                            <h4>{{ post.fields.title }}</h4>
+                            <div class="description text-gray">{{ post.fields.description }}</div>
+                            <div class="action">Read More</div>
+                          </div>
+                          <div class="column col-4 hide-sm photo">
+                            <img
+                              v-if="post.fields.heroImage"
+                              class="img-responsive"
+                              alt="heading photo"
+                              :src="post.fields.heroImage.fields.file.url">
+                          </div>
+                        </div>
+                      </template>
+                      <template v-else>
+                        <!-- 見出し画像なし -->
+                        <div class="columns">
+                          <div class="column col-12 description">
+                            <h4>{{ post.fields.title }}</h4>
+                            <div class="description text-gray">{{ post.fields.description }}</div>
+                            <div class="action">Read More</div>
+                          </div>
+                        </div>
+                      </template>
+                    </div>
                   </div>
                 </div>
               </nuxt-link>
@@ -20,6 +63,7 @@
       </paginate>
       
       <paginate-links
+        v-scroll-to="{ element: '.outer' }"
         @change="onLangsPageChange"
         for="blog"
         :show-step-links="true"
@@ -31,7 +75,7 @@
           'ul': 'pagination',
           'li': 'page-item',
           '.next > a': 'next-link',
-          '.prev > a': ['prev-link', 'another-class']
+          '.prev > a': 'prev-link'
         }"
       ></paginate-links>
       
@@ -82,12 +126,22 @@ export default {
 
 .blog .panel {
   margin-bottom: 10px;
-  padding: 20px;
+  padding: 2%;
   cursor: pointer;
+}
+
+.blog .panel-header {
+  margin-bottom: -22px;
 }
 
 .blog .panel-body {
   padding-top: 8px;
+}
+
+.blog .publish-date {
+  color: #777777;
+  font-size: 14px;
+  padding-bottom: 10px;
 }
 
 .blog .description {
@@ -103,5 +157,15 @@ export default {
 
 .blog .page-item {
   cursor: pointer;
+}
+
+.blog .photo {
+  max-width: 192px;
+}
+
+.blog .img-center {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
 }
 </style>

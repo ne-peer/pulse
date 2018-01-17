@@ -61,6 +61,7 @@ module.exports = {
   },
   plugins: [
     '~plugins/contentful',
-    '~plugins/paginate'
+    '~plugins/paginate',
+    '~plugins/scrollto'
   ]
 }

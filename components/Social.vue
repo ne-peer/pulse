@@ -56,17 +56,17 @@
   color: #727e96;
 }
 
-.github {
+.social .github {
   color: #454d5d;
   background-color: #f8f9fa;
 }
 
-.qiita {
+.social .qiita {
   color: #7bb84f;
   background-color: #f8f9fa;
 }
 
-.blog {
+.social .blog {
   color: #FA0048;
   background-color: #f8f9fa;
 }

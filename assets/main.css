@@ -10,7 +10,8 @@
  * Markdown用
  */
 .md-preview {
-  text-align: justify;
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 .md-preview h1, .md-preview h2, .md-preview h3 {
@@ -21,6 +22,10 @@
 .md-preview h1, .md-preview h2, .md-preview h3 {
   margin-top: 40px;
   margin-bottom: 10px;
+}
+
+.md-preview p {
+  margin-bottom: 30px;
 }
 
 .md-preview hr {

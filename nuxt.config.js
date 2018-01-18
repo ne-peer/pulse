@@ -63,5 +63,10 @@ module.exports = {
     '~plugins/contentful',
     '~plugins/paginate',
     '~plugins/scrollto'
+  ],
+  modules: [
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-80675437-3'
+    }]
   ]
 }

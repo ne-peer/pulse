@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer class="pulse-footer">
     <div class="author">
       <div class="name">Pulse</div>
       <address class="mail">
@@ -18,27 +18,27 @@
 </template>
 
 <style>
-footer {
+.pulse-footer {
   margin-top: 40px;
   background-color: #454d5d;
   height: 220px;
 }
 
-footer .author {
+.pulse-footer .author {
   padding-top: 50px;
   width: 200px;
   margin: 0 auto;
   text-align: center;
 }
 
-footer .name {
+.pulse-footer .name {
   color: #5adedc;
   font-weight: 300;
   font-size: 22px;
   letter-spacing: 10px;
 }
 
-footer .mail {
+.pulse-footer .mail {
   color: #ccc;
   font-weight: 300;
   font-size: 12px;
@@ -46,19 +46,19 @@ footer .mail {
   padding-right: 8px;
 }
 
-footer .spacer {
+.pulse-footer .spacer {
   margin-top: 10px;
   margin-bottom: 40px;
   padding-right: 16px;
 }
 
-footer .divider {
+.pulse-footer .divider {
   margin: 0 auto;
   width: 12px;
   border: solid #999 1px;
 }
 
-footer .attribution {
+.pulse-footer .attribution {
   margin-right: 16px;
   text-align: center;
 }

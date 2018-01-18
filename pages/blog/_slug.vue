@@ -6,11 +6,11 @@
     <article class="section">
       <div class="headline">
         <h1>{{ currentPost.fields.title }}</h1>
-        <p class="publish-date">
+        <span class="publish-date">
           {{ (new Date(currentPost.fields.publishDate)).getFullYear() }}年 
           {{ (new Date(currentPost.fields.publishDate)).getMonth() + 1 }}月 
           {{ (new Date(currentPost.fields.publishDate)).getDay() }}日
-        </p>
+        </span>
       </div>
 
       <div class="pulse-border"></div>
@@ -137,7 +137,6 @@
 .post .headline {
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 1.5rem;
 }
 
 .post .publish-date {

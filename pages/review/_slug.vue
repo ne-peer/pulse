@@ -94,7 +94,6 @@
 .post {
   max-width: 740px;
   margin: 0 auto;
-  letter-spacing: 1.5px;
 }
 
 .post .headline {

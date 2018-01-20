@@ -17,11 +17,13 @@
 .md-preview h1, .md-preview h2, .md-preview h3 {
   margin-top: 60px;
   margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: dotted 2px #00ACAA;
 }
 
-.md-preview h1, .md-preview h2, .md-preview h3 {
+.md-preview h4, .md-preview h5, .md-preview h6 {
   margin-top: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .md-preview p {

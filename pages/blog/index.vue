@@ -1,6 +1,9 @@
 <template>
   <section class="blog">
-
+    <div class="page-title">
+      <h2>Blog</h2>
+      <div class="pulse-border"></div>
+    </div>
       <paginate name="blog" :list="blog" :per="6" tag="div">
         <div class="container">
           <div class="columns">
@@ -32,7 +35,6 @@
                           <div class="column col-18 col-sm-12 description">
                             <h4>{{ post.fields.title }}</h4>
                             <div class="description text-gray">{{ post.fields.description }}</div>
-                            <div class="action">Read More</div>
                           </div>
                           <div class="column col-4 hide-sm photo">
                             <img
@@ -49,11 +51,13 @@
                           <div class="column col-12 description">
                             <h4>{{ post.fields.title }}</h4>
                             <div class="description text-gray">{{ post.fields.description }}</div>
-                            <div class="action">Read More</div>
                           </div>
                         </div>
                       </template>
                     </div>
+                  </div>
+                  <div class="panel-footer">
+                    <div class="action">Read More</div>
                   </div>
                 </div>
               </nuxt-link>
@@ -120,8 +124,15 @@ export default {
 
 <style>
 .blog {
-  margin-left: 14px;
-  margin-right: 14px;
+  max-width: 728px;
+  margin: 0 auto;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-bottom: 20px;
+}
+
+.blog .page-title {
+  text-align:center;
 }
 
 .blog .panel {
@@ -146,11 +157,9 @@ export default {
 
 .blog .description {
   letter-spacing: 2px;
-  text-align: justify;
 }
 
 .blog .action {
-  margin-top: 10px;
   text-align: right;
   color: #009391;
 }

@@ -1,5 +1,9 @@
 <template>
   <section class="review">
+    <div class="page-title">
+      <h2>Review</h2>
+      <div class="pulse-border"></div>
+    </div>
     <div class="container">
 
       <div class="columns">
@@ -64,6 +68,10 @@ export default {
 .review {
   margin-left: 14px;
   margin-right: 14px;
+}
+
+.review .page-title {
+  text-align:center;
 }
 
 .review .card {

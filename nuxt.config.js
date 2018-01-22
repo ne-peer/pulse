@@ -5,18 +5,19 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Pulse Freelance',
+    title: 'Pulse',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'site_name', content: 'Pulse' },
-      { name: 'keywords', content: 'Pulse,パルス,ne-peer' },
-      { name: 'description', content: '@ne-peerの個人的なサイトです。' },
+      { name: 'keywords', content: 'Pulse,ne-peer,レビュー' },
+      { name: 'description', content: '@ne-peerの個人的なサイトです。日記、ガジェットのレビュー、ポートフォリオなど。' },
       { name: 'image', content: 'https://ne-peer.ams3.digitaloceanspaces.com/resource/personal-icon.png' },
+      { name: 'google-site-verification', content: 'iGhRc61DwuR7ZSRhxXiZe9PT10azGlsZ51_OtyVzXbE' },
       { name: 'og:type', content: 'website' },
       { name: 'og:site_name', content: 'Pulse' },
       { name: 'og:title', content: 'Pulse' },
-      { name: 'og:description', content: '@ne-peerの個人的なサイトです。' },
+      { name: 'og:description', content: '@ne-peerの個人的なサイトです。日記、ガジェットのレビュー、ポートフォリオなど。' },
       { name: 'og:url', content: 'https://ne-peer.xyz' },
       { name: 'og:image', content: 'https://ne-peer.ams3.digitaloceanspaces.com/resource/personal-icon.png' }
     ],

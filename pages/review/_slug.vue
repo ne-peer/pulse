@@ -9,7 +9,7 @@
         <p class="publish-date">
           {{ (new Date(currentPost.fields.publishDate)).getFullYear() }}年 
           {{ (new Date(currentPost.fields.publishDate)).getMonth() + 1 }}月 
-          {{ (new Date(currentPost.fields.publishDate)).getDay() }}日
+          {{ (new Date(currentPost.fields.publishDate)).getDate() }}日
         </p>
       </div>
 

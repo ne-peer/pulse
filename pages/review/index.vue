@@ -14,7 +14,7 @@
               <div class="card-subtitle text-gray">
                 {{ (new Date(post.fields.publishDate)).getFullYear() }}年 
                 {{ (new Date(post.fields.publishDate)).getMonth() + 1 }}月 
-                {{ (new Date(post.fields.publishDate)).getDay() }}日
+                {{ (new Date(post.fields.publishDate)).getDate() }}日
               </div>
             </div>
             <div class="card-image">

@@ -29,34 +29,34 @@
 </template>
 
 <style>
-header.navbar {
+.navbar {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 18px;
   padding-right: 18px;
 }
 
-header.navbar .navbar-brand {
+.navbar .navbar-brand {
   font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
   font-weight: 400;
   letter-spacing: 4px;
 }
 
-header.navbar .btn:hover,
-header.navbar .btn:focus {
+.navbar .btn:hover,
+.navbar .btn:focus {
   color: #ffffff;
 }
 
-header .btn-group-block button {
+.btn-group-block button {
   width: 140px;
   font-size: 14px;
 }
 
-header i {
+.navbar i {
   font-size: 12px;
 }
 
-header button span {
+.navbar button span {
   margin-left: 12px;
 }
 </style>

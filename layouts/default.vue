@@ -72,7 +72,7 @@ export default {
 
 .main-contents {
   min-height: 750px;
-  font-family: "Roboto Mono", "Source Code Pro", Consolas, "Courier New", monospace, Verdana;
-  font-weight: 400;
+  /* font-family: "Roboto Mono", "Source Code Pro", Consolas, "Courier New", monospace, Verdana;
+  font-weight: 400; */
 }
 </style>

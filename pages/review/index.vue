@@ -18,10 +18,12 @@
               </div>
             </div>
             <div class="card-image">
-              <img 
-                v-if="post.fields.heroImage.fields.file.url != undefined"
-                :src="post.fields.heroImage.fields.file.url"
-                class="img-responsive" alt="hero image">
+              <div class="trim">
+                <img 
+                  v-if="post.fields.heroImage.fields.file.url != undefined"
+                  :src="post.fields.heroImage.fields.file.url"
+                  class="img-responsive" alt="hero image">
+              </div>
             </div>
             <div class="card-body">
               {{ post.fields.description }}
@@ -75,8 +77,6 @@ export default {
 }
 
 .review .card {
-  /* position:relative; */
-  /* height: 250px; */
   background-color: #f8f9fa;
   cursor: pointer;
   margin-left: 4px;
@@ -84,9 +84,27 @@ export default {
   margin-bottom: 8px;
 }
 
+.review .card .trim {
+  width: auto;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.review .card .trim img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.review .card .card-body {
+  height: 80px;
+}
+
 .review .card .card-footer {
-  /* position:absolute;
-  bottom: -18px; */
   width: 100%;
   text-align: right;
   vertical-align: bottom;

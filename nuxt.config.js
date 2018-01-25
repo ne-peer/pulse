@@ -69,6 +69,18 @@ module.exports = {
   modules: [
     ['@nuxtjs/google-analytics', {
       id: 'UA-80675437-3'
+    }],
+    ['@nuxtjs/sitemap', {
+      path: '/sitemap.xml',
+      generate: false,
+      routes: [
+        // 自動生成されないためダイナミックルートを手動で定義する
+        '/review/happy-hacking-keyboard-bt',
+        '/review/amsterdam-pc-bag',
+        '/review/iphone-x-review',
+        '/review/bookarc',
+        '/review/essential-phone-ph1'
+      ]
     }]
   ]
 }

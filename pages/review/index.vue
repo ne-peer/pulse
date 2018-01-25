@@ -8,30 +8,53 @@
 
       <div class="columns">
         <div class="col-4 col-md-6 col-sm-12" v-for="post in review">
-          <nuxt-link tag="div" :to="{ name: 'review-slug', params: { slug: post.fields.slug }}" class="card">
-            <div class="card-header">
-              <div class="card-title h5">{{ post.fields.title }}</div>
-              <div class="card-subtitle text-gray">
-                {{ (new Date(post.fields.publishDate)).getFullYear() }}年 
-                {{ (new Date(post.fields.publishDate)).getMonth() + 1 }}月 
-                {{ (new Date(post.fields.publishDate)).getDate() }}日
+          
+          <!-- for Desktop -->
+          <section class="desktop hide-sm">
+            <nuxt-link tag="div" class="card" :to="{ name: 'review-slug', params: { slug: post.fields.slug }}">
+              <div class="card-header">
+                <div class="card-title h5">{{ post.fields.title }}</div>
+                <div class="card-subtitle text-gray">
+                  {{ (new Date(post.fields.publishDate)).getFullYear() }}年 
+                  {{ (new Date(post.fields.publishDate)).getMonth() + 1 }}月 
+                  {{ (new Date(post.fields.publishDate)).getDate() }}日
+                </div>
               </div>
-            </div>
-            <div class="card-image">
-              <div class="trim">
+              <div class="card-image">
+                <div class="trim">
+                  <img 
+                    v-if="post.fields.heroImage.fields.file.url != undefined"
+                    :src="post.fields.heroImage.fields.file.url"
+                    class="img-responsive" alt="hero image">
+                </div>
+              </div>
+              <div class="card-body">
+                {{ post.fields.description }}
+              </div>
+              <div class="card-footer">
+                <p>Read More</p>
+              </div>
+            </nuxt-link>
+          </section>
+          <!-- for smartphone -->
+          <section class="smartphone show-sm">
+            <nuxt-link tag="div" class="tile" :to="{ name: 'review-slug', params: { slug: post.fields.slug }}">
+              <div class="tile-icon">
                 <img 
                   v-if="post.fields.heroImage.fields.file.url != undefined"
                   :src="post.fields.heroImage.fields.file.url"
                   class="img-responsive" alt="hero image">
               </div>
-            </div>
-            <div class="card-body">
-              {{ post.fields.description }}
-            </div>
-            <div class="card-footer">
-              <p>Read More</p>
-            </div>
-          </nuxt-link>
+              <div class="tile-content">
+                <p class="tile-title">{{ post.fields.title }}</p>
+                <p class="tile-subtitle text-gray">{{ post.fields.description }}</p>
+              </div>
+              <div class="tile-action">
+                <button class="btn btn-primary">View</button>
+              </div>
+            </nuxt-link>
+          </section>
+
         </div>
       </div>
       
@@ -76,7 +99,7 @@ export default {
   text-align:center;
 }
 
-.review .card {
+.review .desktop .card {
   background-color: #f8f9fa;
   cursor: pointer;
   margin-left: 4px;
@@ -84,14 +107,14 @@ export default {
   margin-bottom: 8px;
 }
 
-.review .card .trim {
+.review .desktop .card .trim {
   width: auto;
   height: 250px;
   overflow: hidden;
   position: relative;
 }
 
-.review .card .trim img {
+.review .desktop .card .trim img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -100,14 +123,41 @@ export default {
   transform: translate(-50%, -50%);
 }
 
-.review .card .card-body {
+.review .desktop .card .card-body {
   height: 80px;
 }
 
-.review .card .card-footer {
+.review .desktop .card .card-footer {
   width: 100%;
   text-align: right;
   vertical-align: bottom;
   color: #00acaa;
+}
+
+.review .smartphone {
+  background-color: #f8f9fa;
+  border-radius: 2px;
+}
+
+.review .smartphone .tile {
+  min-height: 110px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.review .smartphone .tile-title {
+  margin-bottom: 10px;
+  padding-top: 5px;
+}
+
+.review .smartphone .tile-subtitle {
+  font-size: 10px;
+  line-height: 1.4;
+  margin-bottom: 0px;
+}
+
+.review .smartphone .tile img {
+  width: 100px;
+  padding-top: 5px;
 }
 </style>

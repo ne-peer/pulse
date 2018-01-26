@@ -67,8 +67,22 @@ import {createClient} from '~/plugins/contentful.js'
 
 const client = createClient()
 export default {
-  head: {
-    title: 'Pulse | レビュー'
+  head() {
+    return {
+      title: 'Pulse | レビュー',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'これまでに購入したもののレビューです。'
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: 'これまでに購入したもののレビューです。'
+        }
+      ]
+    }
   },
   data () {
     return {

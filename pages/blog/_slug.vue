@@ -73,6 +73,11 @@
             hid: 'description',
             name: 'description',
             content: this.currentPost.fields.description
+          },
+          {
+            hid: 'og:description',
+            name: 'og:description',
+            content: this.currentPost.fields.description
           }
         ]
       }

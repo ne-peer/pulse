@@ -164,18 +164,20 @@ export default {
 .review .smartphone .tile {
   min-height: 110px;
   margin-bottom: 10px;
-  padding: 5px;
 }
 
 .review .smartphone .tile-title {
   margin-bottom: 10px;
-  padding-top: 5px;
+  padding-top: 10px;
+  padding-right: 5px;
 }
 
 .review .smartphone .tile-subtitle {
   font-size: 10px;
   line-height: 1.4;
   margin-bottom: 0px;
+  padding-left: 5px;
+  padding-top: 5px;
 }
 
 .review .smartphone .tile img {

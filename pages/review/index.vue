@@ -13,7 +13,7 @@
           <section class="desktop hide-sm">
             <nuxt-link tag="div" class="card" :to="{ name: 'review-slug', params: { slug: post.fields.slug }}">
               <div class="card-header">
-                <div class="card-title h5">{{ post.fields.title }}</div>
+                <div class="card-title h5">{{ shorter(post.fields.title) }}</div>
                 <div class="card-subtitle text-gray">
                   {{ (new Date(post.fields.publishDate)).getFullYear() }}年 
                   {{ (new Date(post.fields.publishDate)).getMonth() + 1 }}月 
@@ -32,7 +32,7 @@
                 {{ post.fields.description }}
               </div>
               <div class="card-footer">
-                <p>Read More</p>
+                Read More
               </div>
             </nuxt-link>
           </section>
@@ -85,6 +85,14 @@ export default {
         review: entries.items
       }
     }).catch(console.error)
+  },
+  methods: {
+    shorter(str) {
+      if (str.length > 25) {
+        return str.slice(0, 25) + '..';
+      }
+      return str;
+    }
   }
 }
 </script>

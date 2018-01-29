@@ -20,7 +20,7 @@
                   <div class="panel-body">
                     <div class="container">
                       <div class="columns">
-                        <div class="column show-sm photo img-center">
+                        <div class="column show-sm photo img-center singlecolumn-img">
                           <img
                             v-if="post.fields.heroImage"
                             class="img-responsive"
@@ -190,5 +190,9 @@ export default {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
+}
+
+.blog .singlecolumn-img {
+  padding-bottom: 10px;
 }
 </style>

@@ -4,33 +4,50 @@
       <h2>Blog</h2>
       <div class="pulse-border"></div>
     </div>
-      <paginate name="blog" :list="blog" :per="6" tag="div">
-        <div class="container">
-          <div class="timeline">
-            <div class="columns" v-for="post in paginated('blog')">
-
-              <div class="column col-2 col-lg-3 timeline-item hide-md">
-                <div class="timeline-left">
-                  <a class="timeline-icon"></a>
-                </div>
-                <div class="timeline-content text-gray">
-                  # {{ (new Date(post.fields.publishDate)).getFullYear() }}.{{ (new Date(post.fields.publishDate)).getMonth() + 1 }}.{{ (new Date(post.fields.publishDate)).getDate() }}
-                </div>
+    
+    <paginate-links v-scroll-to="{ element: '.outer' }" @change="onLangsPageChange" for="blog" :show-step-links="true"
+      :step-links="{ next: 'Next', prev: 'Prev' }" :classes="{ 'ul': 'pagination', 'li': 'page-item', '.next > a': 'next-link', '.prev > a': 'prev-link' }"
+    ></paginate-links>
+    <paginate name="blog" :list="blog" :per="6" tag="div">
+      <div class="container">
+        <div class="timeline">
+          <div class="columns" v-for="post in paginated('blog')">
+            <div class="column col-2 col-lg-3 timeline-item hide-md">
+              <div class="timeline-left">
+                <a class="timeline-icon"></a>
               </div>
-
-              <nuxt-link class="column col-9 col-md-12" tag="div" :to="{ name: 'blog-slug', params: { slug: post.fields.slug }}">
-                <div class="panel">
-                  <div class="panel-header">
-                    <div class="publish-date show-md">
-                      {{ (new Date(post.fields.publishDate)).getFullYear() }}年 
-                      {{ (new Date(post.fields.publishDate)).getMonth() + 1 }}月 
-                      {{ (new Date(post.fields.publishDate)).getDate() }}日
-                    </div>
+              <div class="timeline-content text-gray">
+                # {{ (new Date(post.fields.publishDate)).getFullYear() }}.{{ (new Date(post.fields.publishDate)).getMonth() + 1 }}.{{ (new Date(post.fields.publishDate)).getDate() }}
+              </div>
+            </div>
+            <nuxt-link class="column col-9 col-md-12" tag="div" :to="{ name: 'blog-slug', params: { slug: post.fields.slug }}">
+              <div class="panel">
+                <div class="panel-header">
+                  <div class="publish-date show-md">
+                    {{ (new Date(post.fields.publishDate)).getFullYear() }}年 
+                    {{ (new Date(post.fields.publishDate)).getMonth() + 1 }}月 
+                    {{ (new Date(post.fields.publishDate)).getDate() }}日
                   </div>
-                  <div class="panel-body">
-                    <div class="container">
+                </div>
+                <div class="panel-body">
+                  <div class="container">
+                    <div class="columns">
+                      <div class="column show-sm photo img-center singlecolumn-img">
+                        <img
+                          v-if="post.fields.heroImage"
+                          class="img-responsive"
+                          alt="heading photo"
+                          :src="post.fields.heroImage.fields.file.url">
+                      </div>
+                    </div>
+                    <template v-if="post.fields.heroImage">
+                      <!-- 見出し画像あり -->
                       <div class="columns">
-                        <div class="column show-sm photo img-center singlecolumn-img">
+                        <div class="column col-18 col-sm-12 description">
+                          <h4>{{ post.fields.title }}</h4>
+                          <div class="description text-gray">{{ post.fields.description }}</div>
+                        </div>
+                        <div class="column col-4 hide-sm photo">
                           <img
                             v-if="post.fields.heroImage"
                             class="img-responsive"
@@ -38,61 +55,31 @@
                             :src="post.fields.heroImage.fields.file.url">
                         </div>
                       </div>
-
-                      <template v-if="post.fields.heroImage">
-                        <!-- 見出し画像あり -->
-                        <div class="columns">
-                          <div class="column col-18 col-sm-12 description">
-                            <h4>{{ post.fields.title }}</h4>
-                            <div class="description text-gray">{{ post.fields.description }}</div>
-                          </div>
-                          <div class="column col-4 hide-sm photo">
-                            <img
-                              v-if="post.fields.heroImage"
-                              class="img-responsive"
-                              alt="heading photo"
-                              :src="post.fields.heroImage.fields.file.url">
-                          </div>
+                    </template>
+                    <template v-else>
+                      <!-- 見出し画像なし -->
+                      <div class="columns">
+                        <div class="column col-12 description">
+                          <h4>{{ post.fields.title }}</h4>
+                          <div class="description text-gray">{{ post.fields.description }}</div>
                         </div>
-                      </template>
-                      <template v-else>
-                        <!-- 見出し画像なし -->
-                        <div class="columns">
-                          <div class="column col-12 description">
-                            <h4>{{ post.fields.title }}</h4>
-                            <div class="description text-gray">{{ post.fields.description }}</div>
-                          </div>
-                        </div>
-                      </template>
-                    </div>
-                  </div>
-                  <div class="panel-footer">
-                    <div class="action">Read More</div>
+                      </div>
+                    </template>
                   </div>
                 </div>
-              </nuxt-link>
-            </div>
+                <div class="panel-footer">
+                  <div class="action">Read More</div>
+                </div>
+              </div>
+            </nuxt-link>
           </div>
         </div>
-      </paginate>
-      
-      <paginate-links
-        v-scroll-to="{ element: '.outer' }"
-        @change="onLangsPageChange"
-        for="blog"
-        :show-step-links="true"
-        :step-links="{
-          next: 'Next',
-          prev: 'Prev'
-        }"
-        :classes="{
-          'ul': 'pagination',
-          'li': 'page-item',
-          '.next > a': 'next-link',
-          '.prev > a': 'prev-link'
-        }"
-      ></paginate-links>
-      
+      </div>
+    </paginate>
+    
+    <paginate-links v-scroll-to="{ element: '.outer' }" @change="onLangsPageChange" for="blog" :show-step-links="true"
+      :step-links="{ next: 'Next', prev: 'Prev' }" :classes="{ 'ul': 'pagination', 'li': 'page-item', '.next > a': 'next-link', '.prev > a': 'prev-link' }"
+    ></paginate-links>
   </section>
 </template>
 
@@ -155,59 +142,64 @@ export default {
   padding-bottom: 20px;
 }
 
-.blog .page-title {
-  text-align:center;
+.page-title {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-.blog .panel {
+.panel {
   margin-bottom: 10px;
   padding: 2%;
   cursor: pointer;
 }
 
-.blog .panel-header {
+.panel-header {
   margin-bottom: -22px;
 }
 
-.blog .panel-body {
+.panel-body {
   padding-top: 8px;
 }
 
-.blog .publish-date {
+.publish-date {
   color: #777777;
   font-size: 14px;
   padding-bottom: 10px;
 }
 
-.blog .description {
+.description {
   letter-spacing: 2px;
 }
 
-.blog .action {
+.action {
   text-align: right;
   color: #009391;
 }
 
-.blog .page-item {
+.page-item {
   cursor: pointer;
 }
 
-.blog .photo {
+.photo {
   max-width: 192px;
 }
 
-.blog .img-center {
+.img-center {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
 }
 
-.blog .singlecolumn-img {
+.singlecolumn-img {
   padding-bottom: 10px;
 }
 
 .timeline-content {
   font-size: 22px;
   font-weight: bold;
+}
+
+ul, li {
+  cursor: pointer;
 }
 </style>

@@ -6,12 +6,22 @@
     </div>
       <paginate name="blog" :list="blog" :per="6" tag="div">
         <div class="container">
-          <div class="columns">
-            <div class="column col-12" v-for="post in paginated('blog')">
-              <nuxt-link tag="div" :to="{ name: 'blog-slug', params: { slug: post.fields.slug }}">
+          <div class="timeline">
+            <div class="columns" v-for="post in paginated('blog')">
+
+              <div class="column col-2 col-lg-3 timeline-item hide-md">
+                <div class="timeline-left">
+                  <a class="timeline-icon"></a>
+                </div>
+                <div class="timeline-content text-gray">
+                  # {{ (new Date(post.fields.publishDate)).getFullYear() }}.{{ (new Date(post.fields.publishDate)).getMonth() + 1 }}.{{ (new Date(post.fields.publishDate)).getDate() }}
+                </div>
+              </div>
+
+              <nuxt-link class="column col-9 col-md-12" tag="div" :to="{ name: 'blog-slug', params: { slug: post.fields.slug }}">
                 <div class="panel">
                   <div class="panel-header">
-                    <div class="publish-date">
+                    <div class="publish-date show-md">
                       {{ (new Date(post.fields.publishDate)).getFullYear() }}年 
                       {{ (new Date(post.fields.publishDate)).getMonth() + 1 }}月 
                       {{ (new Date(post.fields.publishDate)).getDate() }}日
@@ -136,12 +146,12 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .blog {
-  max-width: 728px;
+  max-width: 1090px;
   margin: 0 auto;
-  padding-left: 14px;
-  padding-right: 14px;
+  padding-left: 5px;
+  padding-right: 5px;
   padding-bottom: 20px;
 }
 
@@ -194,5 +204,10 @@ export default {
 
 .blog .singlecolumn-img {
   padding-bottom: 10px;
+}
+
+.timeline-content {
+  font-size: 22px;
+  font-weight: bold;
 }
 </style>

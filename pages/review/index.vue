@@ -4,7 +4,7 @@
       <h2>Review</h2>
       <div class="pulse-border"></div>
     </div>
-    <div class="container">
+    <div class="container ps-width">
 
       <div class="columns">
         <div class="col-4 col-md-6 col-sm-12" v-for="post in review">

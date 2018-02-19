@@ -25,12 +25,9 @@ export default {
 </script>
 
 <style scoped>
-.content {
+.nav {
   max-width: 980px;
   margin: 0 auto;
-}
-
-.nav {
   margin-bottom: 40px;
 }
 

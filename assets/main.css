@@ -9,6 +9,11 @@
   opacity: 0;
 }
 
+.ps-width {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
 /**
  * Markdown用
  */

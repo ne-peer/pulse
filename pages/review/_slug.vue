@@ -97,7 +97,7 @@
 
 <style>
 .post {
-  max-width: 740px;
+  max-width: 860px;
   margin: 0 auto;
 }
 

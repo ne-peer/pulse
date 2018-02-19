@@ -134,7 +134,7 @@
 
 <style>
 .post {
-  max-width: 740px;
+  max-width: 800px;
   margin: 0 auto;
   letter-spacing: 1.5px;
 }

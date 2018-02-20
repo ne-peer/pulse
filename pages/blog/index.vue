@@ -13,7 +13,7 @@
     
     <div class="pulse-border"></div>
     
-    <div class="contents">
+    <div id="contents" class="contents">
       <paginate-links v-scroll-to="{ element: '.outer' }" @change="onLangsPageChange" for="blog" :show-step-links="true"
         :step-links="{ next: 'Next', prev: 'Prev' }" :classes="{ 'ul': 'pagination', 'li': 'page-item', '.next > a': 'next-link', '.prev > a': 'prev-link' }"
       ></paginate-links>
@@ -86,7 +86,7 @@
         </div>
       </paginate>
       
-      <paginate-links v-scroll-to="{ element: '.outer' }" @change="onLangsPageChange" for="blog" :show-step-links="true"
+      <paginate-links v-scroll-to="{ element: '#contents' }" @change="onLangsPageChange()" for="blog" :show-step-links="true"
         :step-links="{ next: 'Next', prev: 'Prev' }" :classes="{ 'ul': 'pagination', 'li': 'page-item', '.next > a': 'next-link', '.prev > a': 'prev-link' }"
       ></paginate-links>
     </div>
@@ -102,16 +102,8 @@ export default {
     return {
       title: 'Pulse | 日記',
       meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: '他愛のない話'
-        },
-        {
-          hid: 'og:description',
-          name: 'og:description',
-          content: '他愛のない話'
-        }
+        { hid: 'description', name: 'description', content: '他愛のない話' },
+        { hid: 'og:description', name: 'og:description', content: '他愛のない話' }
       ]
     }
   },

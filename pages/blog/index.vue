@@ -196,7 +196,7 @@ export default {
 
 .timeline-content {
   font-size: 22px;
-  font-weight: bold;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 
 ul, li {

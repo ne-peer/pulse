@@ -21,7 +21,7 @@
         <div class="container">
           <div class="timeline">
             <div class="columns" v-for="post in paginated('blog')">
-              <div class="column col-2 col-lg-3 timeline-item hide-md">
+              <div class="column col-2 col-lg-3 col-md-12 timeline-item">
                 <div class="timeline-left">
                   <a class="timeline-icon"></a>
                 </div>
@@ -32,11 +32,6 @@
               <nuxt-link class="column col-9 col-md-12" tag="div" :to="{ name: 'blog-slug', params: { slug: post.fields.slug }}">
                 <div class="panel">
                   <div class="panel-header">
-                    <div class="publish-date show-md">
-                      {{ (new Date(post.fields.publishDate)).getFullYear() }}年 
-                      {{ (new Date(post.fields.publishDate)).getMonth() + 1 }}月 
-                      {{ (new Date(post.fields.publishDate)).getDate() }}日
-                    </div>
                   </div>
                   <div class="panel-body">
                     <div class="container">

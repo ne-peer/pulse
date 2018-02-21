@@ -6,7 +6,7 @@
           <h2>Blog</h2>
         </div>
         <div class="parallax-back">
-          <img src="https://ne-peer.ams3.digitaloceanspaces.com/resource/bheader.JPG" class="img-responsive rounded" height="400">
+          <img src="~static/bheader.jpg" class="img-responsive rounded" height="400">
         </div>
       </div>
     </div>
@@ -159,6 +159,7 @@ export default {
 
 .panel-body {
   padding-top: 8px;
+  overflow-y: hidden;
 }
 
 .publish-date {

@@ -195,7 +195,7 @@ export default {
   padding-bottom: 10px;
 }
 
-.timeline-content {
+.timeline-content, .parallax-front {
   font-size: 22px;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }

@@ -62,7 +62,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .portfolio-private .card {
   margin: 5px;
   background-color: #f8f9fa;

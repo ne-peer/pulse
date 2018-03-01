@@ -1,5 +1,5 @@
 <template>
-  <section class="introduction">
+  <section class="introduction ps-width">
     <div class="divider text-center" data-content="プロフィール"></div>
     <div class="section">
       <Profile/>
@@ -32,7 +32,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .introduction .section {
   margin-top: 40px;
   margin-bottom: 80px;

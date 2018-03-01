@@ -2,7 +2,7 @@
   <section class="skill-section">
     <div class="container">
       <div class="columns">
-        <div class="col-10 col-mx-auto">
+        <div class="col-10 col-sm-12 col-mx-auto">
           <div class="inner">
             <img src="~/static/skill/php.svg" width="64" height="64" alt="php">
             <img src="~/static/skill/html.svg" width="64" height="64" alt="html">

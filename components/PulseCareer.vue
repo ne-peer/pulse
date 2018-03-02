@@ -62,7 +62,7 @@
   </section>
 </template>
 
-<style>
+<style scoped>
 .career .note {
   margin-left: 15px;
   font-size: 15px;

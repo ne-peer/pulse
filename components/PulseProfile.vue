@@ -17,7 +17,7 @@
   </section>
 </template>
 
-<style>
+<style scoped>
 .profile .avater {
   width: 150px;
   margin: 0 auto;

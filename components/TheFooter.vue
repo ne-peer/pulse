@@ -17,7 +17,7 @@
   </footer>
 </template>
 
-<style>
+<style scoped>
 .pulse-footer {
   margin-top: 40px;
   background-color: #454d5d;

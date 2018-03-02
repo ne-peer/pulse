@@ -19,7 +19,7 @@
   </section>
 </template>
 
-<style>
+<style scoped>
 .skill-section {
   padding: 20px;
 }

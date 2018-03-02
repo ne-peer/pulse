@@ -34,7 +34,7 @@
   </section>
 </template>
 
-<style>
+<style scoped>
 .social .panel {
   margin: 10px;
   min-height: 100px;

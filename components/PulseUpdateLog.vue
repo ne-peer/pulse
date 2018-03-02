@@ -1,10 +1,5 @@
 <template>
   <section>
-    <h3>Site Updates</h3>
-    <div class="meta">
-      <p>このサイトにおける大きなコンテンツ内容の変更についてのチェンジログです。</p>
-    </div>
-    
     <div class="timeline">
       <div class="timeline-item">
         <div class="timeline-left">

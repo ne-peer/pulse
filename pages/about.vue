@@ -2,29 +2,29 @@
   <section class="introduction ps-width">
     <div class="divider text-center" data-content="プロフィール"></div>
     <div class="section">
-      <Profile/>
-      <Skill/>
+      <pulse-profile></pulse-profile>
+      <pulse-skill></pulse-skill>
     </div>
     <div class="divider text-center" data-content="過去に作ったもの" lang="ja"></div>
     <div class="section">
-        <PortfolioPrivate/>
+      <pulse-portfolio></pulse-portfolio>
     </div>
     <div class="divider text-center" data-content="SNS" lang="ja"></div>
     <div class="section">
-        <Social/>
+      <pulse-social></pulse-social>
     </div>
   </section>
 </template>
 
 <script>
-import Profile from '~/components/Profile.vue'
-import Skill from '~/components/Skill.vue'
-import PortfolioPrivate from '~/components/PortfolioPrivate.vue'
-import Social from '~/components/Social.vue'
+import PulseProfile from '~/components/PulseProfile.vue'
+import PulseSkill from '~/components/PulseSkill.vue'
+import PulsePortfolio from '~/components/PulsePortfolio.vue'
+import PulseSocial from '~/components/PulseSocial.vue'
 
 export default {
   components: {
-    Skill, Profile, PortfolioPrivate, Social
+    PulseSkill, PulseProfile, PulsePortfolio, PulseSocial
   },
   head: {
     title: 'Pulse | About'

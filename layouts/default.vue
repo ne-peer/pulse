@@ -3,23 +3,23 @@
     <script src="https://use.fontawesome.com/f8cbf6b46f.js"></script>
     <div class="content">
       <div class="nav">
-        <Navbar/>
+        <the-navbar></the-navbar>
       </div>
       <div class="main-contents">
         <nuxt/>
       </div>
     </div>
-    <PulseFooter/>
+    <the-footer></the-footer>
   </div>
 </template>
 
 <script>
-import Navbar from '~/components/Navbar.vue'
-import PulseFooter from '~/components/PulseFooter.vue'
+import TheNavbar from '~/components/TheNavbar.vue'
+import TheFooter from '~/components/TheFooter.vue'
 
 export default {
   components: {
-    Navbar, PulseFooter
+    TheNavbar, TheFooter
   }
 }
 </script>

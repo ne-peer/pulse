@@ -1,7 +1,7 @@
 <template>
   <header class="navbar">
     <div class="navbar-section">
-     <nuxt-link tag="a" to="/blog" class="navbar-brand mr-2" lang="en">Pulse</nuxt-link>
+     <nuxt-link tag="a" to="/" class="navbar-brand mr-2" lang="en">Pulse</nuxt-link>
     </div>
     <div class="navbar-section navlink">
       <div class="btn-group btn-group-block">

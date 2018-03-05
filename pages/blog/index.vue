@@ -3,7 +3,7 @@
     <div class="parallax">
       <div class="parallax-content">
         <div class="parallax-front">
-          <h2>Blog</h2>
+          <span class="title en-font">Blog</span>
         </div>
         <div class="parallax-back">
           <img src="~static/bheader.jpg" class="img-responsive rounded" height="400">
@@ -26,7 +26,12 @@
                   <a class="timeline-icon"></a>
                 </div>
                 <div class="timeline-content text-gray">
-                  # {{ (new Date(post.fields.publishDate)).getFullYear() }}.{{ (new Date(post.fields.publishDate)).getMonth() + 1 }}.{{ (new Date(post.fields.publishDate)).getDate() }}
+                  <div class="en-font">
+                    # {{ (new Date(post.fields.publishDate)).getFullYear() }}.{{ (new Date(post.fields.publishDate)).getMonth() + 1 }}.{{ (new Date(post.fields.publishDate)).getDate() }}
+                  </div>
+                  <div class="tags">
+                    <span class="chip">{{ post.fields.tags.join(' / ') }}</span>
+                  </div>
                 </div>
               </div>
               <nuxt-link class="column col-9 col-md-12" tag="div" :to="{ name: 'blog-slug', params: { slug: post.fields.slug }}">
@@ -195,12 +200,21 @@ export default {
   padding-bottom: 10px;
 }
 
-.timeline-content, .parallax-front {
+.timeline-content {
   font-size: 22px;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.title {
+  font-size: 46px;
+  font-weight: lighter;
 }
 
 ul, li {
   cursor: pointer;
+}
+
+.tags {
+  margin-top: 4px;
+  font-size: 14px;
 }
 </style>

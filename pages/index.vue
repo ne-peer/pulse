@@ -1,7 +1,7 @@
 <template>
   <section class="padding">
     <div class="ps-width">
-      <h3>Contents</h3>
+      <h3 class="en-font">Contents</h3>
       <div class="ps-width-mi">
         <pulse-content-list></pulse-content-list>
       </div>
@@ -12,7 +12,7 @@
     </div>
 
     <div class="ps-width">
-      <h3>Site Updates</h3>
+      <h3 class="en-font">Site Updates</h3>
       <div class="meta desc">
         <p>このサイトにおける大きなコンテンツ内容の変更についてのチェンジログです。思いつきで弄って遊んでいます。</p>
       </div>
@@ -51,7 +51,6 @@ export default {
 }
 
 h3 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: lighter;
   font-size: 36px;
 }

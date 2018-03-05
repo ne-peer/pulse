@@ -11,6 +11,7 @@
           {{ (new Date(currentPost.fields.publishDate)).getMonth() + 1 }}月 
           {{ (new Date(currentPost.fields.publishDate)).getDate() }}日
         </span>
+        <span class="bg-primary tags">{{ currentPost.fields.tags.join(',') }}</span>
       </div>
 
       <div class="pulse-border"></div>
@@ -184,5 +185,11 @@
 
 .post .page-nav i {
   margin-top: -2px;
+}
+
+.tags {
+  margin-left: 10px;
+  padding: 4px;
+  border-radius: 2px;
 }
 </style>

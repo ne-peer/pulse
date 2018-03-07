@@ -2,7 +2,7 @@
   <section class="padding">
     <div class="ps-width">
       <h3 class="en-font">Contents</h3>
-      <div class="ps-width-mi">
+      <div class="ps-width">
         <pulse-content-list></pulse-content-list>
       </div>
     </div>

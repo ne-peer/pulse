@@ -4,10 +4,18 @@
       <div class="columns col-sm-oneline">
         <div class="col-6 col-md-12">
           <nuxt-link tag="div" to="/blog" class="content-link">
-            <div class="panel">
-              <div class="panel-body">
-                <h4>Blog</h4>
-                <p class="meta desc">美しく綺麗な記事を書きたいという内なる思いに追いついてこない雑記。たまに思いついたように長文を書いたりもします。</p>
+            <div class="card">
+              <div class="card-image">
+                <img src="~static/bheader.jpg" height="400" class="img-responsive">
+              </div>
+              <div class="card-header">
+                <div class="card-title h4"><i class="fa fa-bookmark" aria-hidden="true"></i>Blog</div>
+                <div class="card-subtitle text-gray">日記・雑文</div>
+              </div>
+              <div class="card-body">
+                美しく綺麗な記事を書きたいという内なる思いに追いついてこない雑記。たまに思いついたように長文を書いたりもします。
+              </div>
+              <div class="card-footer">
                 <div class="pagination">
                   <div class="page-item page-next">
                     <div class="page-item-subtitle">to Blog</div> 
@@ -21,10 +29,18 @@
         
         <div class="col-6 col-md-12">
           <nuxt-link tag="div" to="/review" class="content-link">
-            <div class="panel">
-              <div class="panel-body">
-                <h4>Review</h4>
-                <p class="meta desc">主に購入したガジェットのレビューを書いています。</p>
+            <div class="card">
+              <div class="card-image">
+                <img src="~static/rheader.jpg" class="img-responsive">
+              </div>
+              <div class="card-header">
+                <div class="card-title h4"><i class="fa fa-dollar" aria-hidden="true"></i>Review</div>
+                <div class="card-subtitle text-gray">レビュー</div>
+              </div>
+              <div class="card-body">
+                主に購入したガジェットのレビューを書いています。
+              </div>
+              <div class="card-footer">
                 <div class="pagination">
                   <div class="page-item page-next">
                     <div class="page-item-subtitle">to Review</div> 
@@ -43,19 +59,27 @@
 </template>
 
 <style scoped>
-.panel {
-    margin: 8px 4px 8px 4px;
-    min-height: 100px;
-    padding-top: 18px;
-    border-radius: 5px;
-}
-
 .content-link {
     cursor: pointer;
 }
 
-.desc {
-    padding: 0px 8px 0px 8px;
-    min-height: 64px;
+.card {
+  margin: 0px 2px 0px 2px;
+}
+
+.card-header {
+  letter-spacing: 1px;
+}
+
+.card-body {
+  min-height: 90px;
+}
+
+.title {
+    padding-left: 8px;
+}
+
+i {
+    margin-right: 12px;
 }
 </style>

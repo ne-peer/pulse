@@ -5,7 +5,7 @@
         <div class="col-4 col-md-6 col-xs-12">
           <div class="card">
             <div class="card-image">
-              <img src="~/static/portfolio/deredorm.png" class="img-responsive" alt="deredorm">
+              <img src="~/static/portfolio/deredorm.jpg" class="img-responsive" alt="deredorm">
             </div>
             <div class="card-header">
               <div class="card-title h5">Deredorm</div>

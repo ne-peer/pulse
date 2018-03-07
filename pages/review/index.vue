@@ -1,9 +1,18 @@
 <template>
   <section class="review">
-    <div class="page-title">
-      <h2>Review</h2>
-      <div class="pulse-border"></div>
+    <div class="parallax">
+      <div class="parallax-content">
+        <div class="parallax-front">
+          <span class="title en-font">Review</span>
+        </div>
+        <div class="parallax-back">
+          <img src="~static/rheader.jpg" class="img-responsive rounded" height="400">
+        </div>
+      </div>
     </div>
+
+    <div class="pulse-border"></div>
+    
     <div class="container ps-width">
 
       <div class="columns">
@@ -22,13 +31,11 @@
               </div>
               <div class="card-image">
                 <div class="trim">
-                  <img 
-                    v-if="post.fields.heroImage.fields.file.url != undefined"
-                    :src="post.fields.heroImage.fields.file.url"
-                    class="img-responsive" alt="hero image">
+                  <img v-if="post.fields.heroImage.fields.file.url != undefined"
+                    :src="post.fields.heroImage.fields.file.url" class="img-responsive" alt="hero image">
                 </div>
               </div>
-              <div class="card-body">
+              <div class="card-body meta">
                 {{ post.fields.description }}
               </div>
               <div class="card-footer">
@@ -111,10 +118,20 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .review {
   margin-left: 14px;
   margin-right: 14px;
+}
+
+.parallax {
+  max-width: 1090px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 46px;
+  font-weight: lighter;
 }
 
 .review .page-title {

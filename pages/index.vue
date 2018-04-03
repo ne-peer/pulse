@@ -7,7 +7,7 @@
       </div>
     </div>
 
-    <div class="ps-width">
+    <!-- <div class="ps-width">
       <div class="divider text-center"></div>
     </div>
 
@@ -19,7 +19,7 @@
       <div class="ps-width-mi">
         <pulse-update-log></pulse-update-log>
       </div>
-    </div>
+    </div> -->
   </section>
 </template>
 

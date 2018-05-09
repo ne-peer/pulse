@@ -32,7 +32,7 @@ export default {
 }
 
 .main-contents {
-  min-height: 750px;
+  min-height: 74vh;
   font-family: PT Sans,Helvetica Neue,Arial,Hiragino Kaku Gothic Pro,Meiryo,MS PGothic,sans-serif;
 }
 </style>

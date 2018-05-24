@@ -61,6 +61,11 @@
   margin-bottom: 20px;
 }
 
+.md-preview blockquote {
+  font-size: 14px;
+  color: #999;
+}
+
 .md-preview img {
   max-width: 100%;
   margin-top: 5px;

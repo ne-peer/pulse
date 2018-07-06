@@ -8,8 +8,7 @@
         <div class="col-9 col-sm-11 col-mx-auto">
           <h3>ne-peer</h3>
           <div class="description text-gray">
-            <div class="row">Tokyoでフリーランスエンジニアやってます。趣味でウェブアプリなどを作ったりなんかしています。</div>
-            <div class="row">スマートフォンやガジェットを集める癖があったりします。</div>
+            <div class="row">Tokyoでフリーランスエンジニアやってます。趣味でコーディングもします。スマートフォンやガジェットを集める癖があります。</div>
           </div>
         </div>
       </div>

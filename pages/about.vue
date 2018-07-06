@@ -9,10 +9,6 @@
     <div class="section">
       <pulse-portfolio></pulse-portfolio>
     </div>
-    <div class="divider text-center" data-content="SNS" lang="ja"></div>
-    <div class="section">
-      <pulse-social></pulse-social>
-    </div>
   </section>
 </template>
 
@@ -20,11 +16,10 @@
 import PulseProfile from '~/components/PulseProfile.vue'
 import PulseSkill from '~/components/PulseSkill.vue'
 import PulsePortfolio from '~/components/PulsePortfolio.vue'
-import PulseSocial from '~/components/PulseSocial.vue'
 
 export default {
   components: {
-    PulseSkill, PulseProfile, PulsePortfolio, PulseSocial
+    PulseSkill, PulseProfile, PulsePortfolio
   },
   head: {
     title: 'Pulse | About'

@@ -49,7 +49,7 @@
               <div class="card-subtitle text-gray">Website</div>
             </div>
             <div class="card-body">
-              Clan website of princonne.
+              <a href="https://priconne-redive.jp/">プリンセスコネクト！Re:Dive</a>の身内ページ
             </div>
             <div class="card-footer">
               <button class="btn btn-primary" v-on:click="openMelloyello">View</button>

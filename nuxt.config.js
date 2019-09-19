@@ -83,6 +83,38 @@ module.exports = {
         '/review/essential-phone-ph1',
         '/review/supernote-a5-review'
       ]
-    }]
-  ]
+    }],
+    '@nuxtjs/pwa',
+  ],
+  manifest: {
+    lang: 'ja',
+    name: 'Pulse Blog',
+    short_name: 'Pulse Blog',
+    description: 'engineer blog',
+    background_color: '#00ACAA',
+    orientation: 'portrait'
+  },
+  workbox: {
+    runtimeCaching: [ // googleフォントと、画像をキャッシュ
+      { 
+        urlPattern: '^https://fonts.(?:googleapis|gstatic).com/(.*)',
+        handler: 'cacheFirst'
+      },
+      {
+        urlPattern: baseDir + 'lib/.*', // 画像格納フォルダを設定
+        handler: 'cacheFirst',
+        strategyOptions: {
+          cacheName: 'image-cache',
+          cacheExpiration: {
+            maxEntries: 20,
+            maxAgeSeconds: 24 * 60 * 60 * 30
+          }
+        }
+      }
+    ]
+  },
+  meta: { // iOS用の設定
+    mobileAppIOS: true,
+    appleStatusBarStyle: 'black'
+  },
 }

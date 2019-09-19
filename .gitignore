@@ -16,3 +16,7 @@ development_work
 # env
 .contentful.json
 .DS_Store
+
+# auto generate resource
+sitemap.xml
+sw.js

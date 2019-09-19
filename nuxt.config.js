@@ -1,6 +1,7 @@
 const config = require('./.contentful.json')
 
 module.exports = {
+  mode: 'universal',
   /*
   ** Headers of the page
   */
@@ -72,15 +73,48 @@ module.exports = {
     }],
     ['@nuxtjs/sitemap', {
       path: '/sitemap.xml',
-      generate: false,
+      hostname: 'https://ne-peer.com',
       routes: [
         // 自動生成されないためダイナミックルートを手動で定義する
         '/review/happy-hacking-keyboard-bt',
         '/review/amsterdam-pc-bag',
         '/review/iphone-x-review',
         '/review/bookarc',
-        '/review/essential-phone-ph1'
+        '/review/essential-phone-ph1',
+        '/review/supernote-a5-review'
       ]
-    }]
-  ]
+    }],
+    '@nuxtjs/pwa',
+  ],
+  manifest: {
+    lang: 'ja',
+    name: 'Pulse Blog',
+    short_name: 'Pulse Blog',
+    description: 'engineer blog',
+    background_color: '#00ACAA',
+    orientation: 'portrait'
+  },
+  workbox: {
+    runtimeCaching: [ // googleフォントと、画像をキャッシュ
+      { 
+        urlPattern: '^https://fonts.(?:googleapis|gstatic).com/(.*)',
+        handler: 'cacheFirst'
+      },
+      {
+        urlPattern: '/lib/.*', // 画像格納フォルダを設定
+        handler: 'cacheFirst',
+        strategyOptions: {
+          cacheName: 'image-cache',
+          cacheExpiration: {
+            maxEntries: 20,
+            maxAgeSeconds: 24 * 60 * 60 * 30
+          }
+        }
+      }
+    ]
+  },
+  meta: { // iOS用の設定
+    mobileAppIOS: true,
+    appleStatusBarStyle: 'black'
+  },
 }

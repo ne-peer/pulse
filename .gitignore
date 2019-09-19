@@ -18,5 +18,5 @@ development_work
 .DS_Store
 
 # auto generate resource
-src/static/sitemap.xml
-src/static/sw.js
+sitemap.xml
+sw.js

@@ -72,14 +72,16 @@ module.exports = {
     }],
     ['@nuxtjs/sitemap', {
       path: '/sitemap.xml',
-      generate: false,
+      hostname: 'https://ne-peer.com',
+      generate: true,
       routes: [
         // 自動生成されないためダイナミックルートを手動で定義する
         '/review/happy-hacking-keyboard-bt',
         '/review/amsterdam-pc-bag',
         '/review/iphone-x-review',
         '/review/bookarc',
-        '/review/essential-phone-ph1'
+        '/review/essential-phone-ph1',
+        '/review/supernote-a5-review'
       ]
     }]
   ]

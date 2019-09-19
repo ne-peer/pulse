@@ -102,7 +102,7 @@ module.exports = {
         handler: 'cacheFirst'
       },
       {
-        urlPattern: baseDir + 'lib/.*', // 画像格納フォルダを設定
+        urlPattern: '/lib/.*', // 画像格納フォルダを設定
         handler: 'cacheFirst',
         strategyOptions: {
           cacheName: 'image-cache',

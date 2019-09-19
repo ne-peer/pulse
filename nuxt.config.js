@@ -1,6 +1,7 @@
 const config = require('./.contentful.json')
 
 module.exports = {
+  mode: 'universal',
   /*
   ** Headers of the page
   */
